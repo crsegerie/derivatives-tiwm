@@ -7,7 +7,7 @@ interactive = False
 
 # subjects = ["155", "197", "215", "220"]  # etc..
 # subjects = ["155"]
-subjects = ["197"]
+subjects = ["220"]
 exclude_subjects = ["586", "812", "215", "231", "653"]
 # 586 only 6 runs. 812: 3 runs.
 # warning : subjects with 9 runs: 215, 231, 653 : one of the run was aborted.

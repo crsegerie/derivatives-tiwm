@@ -8,5 +8,5 @@ Workspace saved in :
 /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/workspace.code-workspace
 
 To save tmux output:
-Ctrl+b and then type capture-pane -S -3000 + return
-Ctrl+b and /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/tmux.txt
+Ctrl+b + : and then type capture-pane -S -3000 + return
+Ctrl+b + : and save-buffer /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/tmux197.txt
