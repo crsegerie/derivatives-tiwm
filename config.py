@@ -5,8 +5,6 @@ bids_root = '/storage/store2/data/time_in_wm_new'
 task = 'tiwm'
 interactive = False
 
-# subjects = ["155", "197", "215", "220"]  # etc..
-# subjects = ["155"]
 subjects = ["220"]
 exclude_subjects = ["586", "812", "215", "231", "653"]
 # 586 only 6 runs. 812: 3 runs.
@@ -23,10 +21,7 @@ ch_types = ['meg']
 use_maxwell_filter = True
 mf_reference_run = '01'  # To do change it to run 4
 mf_head_origin = 'auto'  # 'auto', it will be estimated from headshape points.
-
-# If you are interested in low frequency activity (<0.1Hz), avoid using tSSS
-# and set mf_st_duration to None.
-mf_st_duration = None
+mf_st_duration = None  # We are interested in low frequency activity (<0.1Hz)
 
 # Filtering and resampling
 l_freq = 1.
