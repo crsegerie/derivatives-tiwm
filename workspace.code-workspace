@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../../../store/work/csegerie/parietal/mne-python"
+		},
+		{
+			"path": "../../../../../store/work/csegerie/parietal/mne-bids-pipeline"
+		},
+		{
+			"path": "../../../../../store/work/csegerie/parietal/mne-bids"
+		}
+	],
+	"settings": {
+		"python.pythonPath": "/storage/store/work/csegerie/miniconda3/envs/mne_dev/bin/python"
+	}
+}

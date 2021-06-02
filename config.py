@@ -6,14 +6,15 @@ task = 'tiwm'
 interactive = False
 
 # subjects = ["155", "197", "215", "220"]  # etc..
-subjects = ["155"]
-exclude_subjects = ["586", "812"]
+# subjects = ["155"]
+subjects = ["197"]
+exclude_subjects = ["586", "812", "215", "231", "653"]
 # 586 only 6 runs. 812: 3 runs.
 # warning : subjects with 9 runs: 215, 231, 653 : one of the run was aborted.
 
 # runs = "all"  # Bug > result in 9 imported and crash
-# runs = ["01", "02", "03", "04", "05", "06", "07", "08"]
-runs = ["01"]
+runs = ["01", "02", "03", "04", "05", "06", "07", "08"]
+# runs = ["all"] # I have to wait until merge run="all"
 
 find_flat_channels_meg = False
 find_noisy_channels_meg = False
@@ -41,16 +42,15 @@ ica_l_freq = 1.
 ica_decim = 4
 ica_n_components = 0.999
 ica_reject_components = 'auto'
-ica_reject = {'mag': 5e-11}  # reject_beforeICA = {'mag': 5e-11}
-reject_afterICA = {'grad': 4000e-13, 'mag': 1e-11}  # reject but not found
-rejcomps_man = dict()  # Not understood if necesssary here
-ica_ctps_ecg_threshold = 0.1  # Default value not present in documentation.
+ica_reject = {'mag': 5e-11}  # traduction of reject_beforeICA
+reject = {'grad': 4000e-13, 'mag': 1e-11}  # traduction of reject_afterICA
+ica_ctps_ecg_threshold = 0.1  # Default value of bids-pipeline
 ica_eog_threshold = 3.0
 
 # Epochs
 epochs_tmin = -4.6
 epochs_tmax = 5
-trigger_time_shift = 0  # Not understood and not found in the doc
+# trigger_time_shift = 0  # Not found in the doc and Not necessary here
 baseline = (-1, 0)
 
 # Noise estimation
@@ -60,7 +60,7 @@ noise_cov = 'emptyroom'
 
 # event_id : not needed because already in events.tsv
 conditions = ["1_item/short", "1_item/medium", "1_item/long",
-              '3_item/short', '3_item/medium', '3_item/long', ]
+              '3_item/short', '3_item/medium', '3_item/long']
 
 
 # Decoding
@@ -73,10 +73,10 @@ time_frequency_conditions = conditions
 # Source space parameters
 spacing = 'oct6'
 mindist = 5
-# loose = 0.2  # set as "auto" but auto = 0.2
-# depth = 0.8  # not in the pipeline but in mne as 0.8. So ok
+# loose = 0.2  # default value of mne
+# depth = 0.8  # default value of mne
 inverse_method = 'dSPM'
-# smooth = 10  # not found ok
+# smooth = 10  # default value of mne
 
 
 # Advanced parameters
