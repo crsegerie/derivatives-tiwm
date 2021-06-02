@@ -12,7 +12,6 @@ exclude_subjects = ["586", "812", "215", "231", "653"]
 # 586 only 6 runs. 812: 3 runs.
 # warning : subjects with 9 runs: 215, 231, 653 : one of the run was aborted.
 
-# runs = "all"  # Bug > result in 9 imported and crash
 runs = ["01", "02", "03", "04", "05", "06", "07", "08"]
 # runs = ["all"] # I have to wait until merge run="all"
 
