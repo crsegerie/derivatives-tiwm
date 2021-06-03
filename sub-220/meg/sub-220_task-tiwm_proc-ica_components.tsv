@@ -14,8 +14,8 @@ component	type	description	status	status_description
 12	ica	Independent Component	good	n/a
 13	ica	Independent Component	good	n/a
 14	ica	Independent Component	good	n/a
-15	ica	Independent Component	good	n/a
-16	ica	Independent Component	bad	Auto-detected ECG artifact
+15	ica	Independent Component	bad	Auto-detected ECG artifact
+16	ica	Independent Component	good	n/a
 17	ica	Independent Component	good	n/a
 18	ica	Independent Component	good	n/a
 19	ica	Independent Component	good	n/a
@@ -50,8 +50,8 @@ component	type	description	status	status_description
 48	ica	Independent Component	good	n/a
 49	ica	Independent Component	good	n/a
 50	ica	Independent Component	good	n/a
-51	ica	Independent Component	bad	Auto-detected EOG artifact
-52	ica	Independent Component	good	n/a
+51	ica	Independent Component	good	n/a
+52	ica	Independent Component	bad	Auto-detected EOG artifact
 53	ica	Independent Component	good	n/a
 54	ica	Independent Component	good	n/a
 55	ica	Independent Component	good	n/a

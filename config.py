@@ -1,3 +1,6 @@
+"""Configuration of the time in working memory study."""
+
+
 # General
 study_name = 'time_in_wm'
 # bids_root = '/home/charb/Desktop/parietal/time_in_wm_new/'
@@ -5,13 +8,16 @@ bids_root = '/storage/store2/data/time_in_wm_new'
 task = 'tiwm'
 interactive = False
 
-subjects = ["220"]
-exclude_subjects = ["586", "812", "215", "231", "653"]
+# subjects = ["155", "197", "215", "220"]
+subjects = "all"
+exclude_subjects = ["586", "812", "215", "231", "653", "972"]
+
 # 586 only 6 runs. 812: 3 runs.
 # warning : subjects with 9 runs: 215, 231, 653 : one of the run was aborted.
+# Warning: "972" run 7
 
-runs = ["01", "02", "03", "04", "05", "06", "07", "08"]
-# runs = ["all"] # I have to wait until merge run="all"
+# runs = ["01", "02", "03", "04", "05", "06", "07", "08"]
+runs = "all"
 
 find_flat_channels_meg = False
 find_noisy_channels_meg = False
@@ -31,7 +37,7 @@ decim = 1  # no decimation
 
 # Artifact correction.
 spatial_filter = 'ica'
-ica_max_iterations = 500
+ica_max_iterations = 1500
 ica_l_freq = 1.
 ica_decim = 4
 ica_n_components = 0.999

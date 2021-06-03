@@ -9,4 +9,5 @@ Workspace saved in :
 
 To save tmux output:
 Ctrl+b + : and then type capture-pane -S -3000 + return
-Ctrl+b + : and save-buffer /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/tmux220.txt
+Ctrl+b + : and save-buffer /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/tmuxAll1itembug512.txt
+Or tmux capture-pane -pS -1000000 > /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/tmuxAll1itembug512_v2.txt
