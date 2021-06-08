@@ -7,23 +7,15 @@ study_name = 'time_in_wm'
 bids_root = '/storage/store2/data/time_in_wm_new'
 task = 'tiwm'
 interactive = False
-
-# subjects = ["155", "197", "215", "220"]
-subjects = ["215"]
-# subjects = "all"
-# exclude_subjects = ["586", "812", "215", "231", "653", "972", "512"]
-
+subjects = "all"
+exclude_subjects = ["512", "586", "812", "972"]
 # 586 only 6 runs. 812: 3 runs.
 # warning : subjects with 9 runs: 215, 231, 653 : one of the run was aborted.
 # Warning: "972" run 7
-
-# runs = ["01", "02", "03", "04", "05", "06", "07", "08"]
-# runs = "all"
-runs = ["01", "02", "03"]  # bug
-runs = ["03"]  # no bug
-runs = ["01", "03"]  # bug i think
-
-
+runs = "all"
+# runs = ["01", "02", "03"]  # bug
+# runs = ["03"]  # no bug
+# runs = ["01", "03"]  # bug
 find_flat_channels_meg = False
 find_noisy_channels_meg = False
 ch_types = ['meg']
