@@ -7,7 +7,7 @@ study_name = 'time_in_wm'
 bids_root = '/storage/store2/data/time_in_wm_new'
 task = 'tiwm'
 interactive = False
-subjects = ""
+subjects = ["197"]
 exclude_subjects = ["512", "586", "812", "972"]
 # 586 only 6 runs. 812: 3 runs.
 # warning : subjects with 9 runs: 215, 231, 653 : one of the run was aborted.
@@ -48,7 +48,7 @@ ica_eog_threshold = 3.0
 epochs_tmin = -4.6
 epochs_tmax = 5
 # trigger_time_shift = 0  # Not found in the doc and Not necessary here
-baseline = (-1, 0)
+baseline = None
 
 # Noise estimation
 process_er = True
