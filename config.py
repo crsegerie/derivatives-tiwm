@@ -7,7 +7,7 @@ study_name = 'time_in_wm'
 bids_root = '/storage/store2/data/time_in_wm_new'
 task = 'tiwm'
 interactive = False
-subjects = "all"
+subjects = ""
 exclude_subjects = ["512", "586", "812", "972"]
 # 586 only 6 runs. 812: 3 runs.
 # warning : subjects with 9 runs: 215, 231, 653 : one of the run was aborted.
