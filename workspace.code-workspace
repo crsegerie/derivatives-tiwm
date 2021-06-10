@@ -14,6 +14,9 @@
 		},
 		{
 			"path": "../../../../../store/work/csegerie/parietal/mne-bids"
+		},
+		{
+			"path": "../mne-bids-pipeline_2"
 		}
 	],
 	"settings": {
