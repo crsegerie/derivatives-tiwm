@@ -30,7 +30,7 @@ mf_st_duration = None  # We are interested in low frequency activity (<0.1Hz)
 l_freq = 1.
 h_freq = 150.
 resample_sfreq = 500.
-decim = 1  # no decimation
+decim = 5  # no decimation #YES 1
 
 # Artifact correction.
 spatial_filter = 'ica'
@@ -39,7 +39,7 @@ ica_l_freq = 1.
 ica_decim = 4
 ica_n_components = 0.999
 ica_reject_components = 'auto'
-ica_reject = {'mag': 5e-11}  # traduction of reject_beforeICA
+ica_reject = {'mag': 2e-11}  # 5before  # traduction of reject_beforeICA
 reject = {'grad': 4000e-13, 'mag': 1e-11}  # traduction of reject_afterICA
 ica_ctps_ecg_threshold = 0.1  # Default value of bids-pipeline
 ica_eog_threshold = 3.0
@@ -61,8 +61,12 @@ conditions = ["1_item/short", "1_item/medium", "1_item/long",
 
 
 # Decoding
+contrasts = [('auditory/left', 'auditory/right'),
+             ('visual/left', 'visual/right'),
+             ('auditory', 'visual')]
+decode = True
 decoding_metric = 'roc_auc'
-decoding_n_splits = 8
+decoding_n_splits = 1  # 8
 
 # Time frequency
 time_frequency_conditions = conditions
