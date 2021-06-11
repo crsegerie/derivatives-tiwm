@@ -1,0 +1,1893 @@
+store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-tiwm_proc-clean_epo.fif
+Overwriting existing file.
+19:35:46 [Step-06] Completed Step 6: Reject epochs based on peak-to-peak amplitude
+(mne_dev) csegerie@drago4:/storage/store/work/csegerie/parietal/mne-bids-pipeline$ nice -n 5 python run.py --config=/storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/config.py --steps=preprocessing,sensor,re
+port
+2021-06-10 10:46:05 INFO Now running: init_derivatives_dir
+10:46:16 Using custom configuration: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/config.py
+Traceback (most recent call last):
+  File "/storage/store/work/csegerie/parietal/mne-bids-pipeline/run.py", line 200, in <module>
+    fire.Fire(process)
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/site-packages/fire/core.py", line 141, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/site-packages/fire/core.py", line 466, in _Fire
+    component, remaining_args = _CallAndUpdateTrace(
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/site-packages/fire/core.py", line 681, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+  File "/storage/store/work/csegerie/parietal/mne-bids-pipeline/run.py", line 195, in process
+    _run_script(script_path, config, root_dir, subject, session, task, run)
+  File "/storage/store/work/csegerie/parietal/mne-bids-pipeline/run.py", line 101, in _run_script
+    runpy.run_path(script_path, run_name='__main__')
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/runpy.py", line 268, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/runpy.py", line 97, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/storage/store/work/csegerie/parietal/mne-bids-pipeline/scripts/init/00-init_derivatives_dir.py", line 9, in <module>
+    import config
+  File "/storage/store/work/csegerie/parietal/mne-bids-pipeline/config.py", line 1652, in <module>
+    raise ValueError(msg)
+ValueError: You set mf_reference_run=01, but your dataset only contains the following runs: []
+(mne_dev) csegerie@drago4:/storage/store/work/csegerie/parietal/mne-bids-pipeline$ nice -n 5 python run.py --config=/storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/config.py --steps=preprocessing,sensor,re
+port
+2021-06-10 10:49:43 INFO Now running: init_derivatives_dir
+10:49:44 Using custom configuration: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/config.py
+10:49:45 [Step-01] Running: Initializing output directories.
+10:49:45 [Step-01] Initializing output directories.
+10:49:45 [Step-01] Completed: Initializing output directories.
+2021-06-10 10:49:45 INFO Successfully finished running: init_derivatives_dir
+2021-06-10 10:49:45 INFO Now running: import_and_maxfilter
+10:49:49 [Step-01] Running Step 1: Data import
+10:49:49 [Step-01][sub-197] Loading reference run: 01.
+10:49:54 [Step-01][sub-197, run-01] Applying Maxwell filter to experimental data.
+10:50:10 [Step-01][sub-197] Processing empty-room recording …
+10:50:10 [Step-01][sub-197] Applying Maxwell filter to empty-room recording
+10:50:16 [Step-01][sub-197, run-02] Applying Maxwell filter to experimental data.
+10:50:35 [Step-01][sub-197, run-03] Applying Maxwell filter to experimental data.
+10:50:54 [Step-01][sub-197, run-04] Applying Maxwell filter to experimental data.
+10:51:09 [Step-01][sub-197, run-05] Applying Maxwell filter to experimental data.
+10:51:24 [Step-01][sub-197, run-06] Applying Maxwell filter to experimental data.
+10:51:40 [Step-01][sub-197, run-07] Applying Maxwell filter to experimental data.
+10:51:55 [Step-01][sub-197, run-08] Applying Maxwell filter to experimental data.
+10:52:09 [Step-01][sub-215] Loading reference run: 01.
+10:52:14 [Step-01][sub-215, run-01] Applying Maxwell filter to experimental data.
+10:52:14 [Step-01][sub-215, run-01]
+Found no bad channels.
+
+10:52:26 [Step-01][sub-215] Processing empty-room recording …
+10:52:27 [Step-01][sub-215] Applying Maxwell filter to empty-room recording
+10:52:34 [Step-01][sub-215, run-02] Applying Maxwell filter to experimental data.
+10:52:34 [Step-01][sub-215, run-02]
+Found no bad channels.
+
+10:52:55 [Step-01][sub-215, run-03] Applying Maxwell filter to experimental data.
+10:52:55 [Step-01][sub-215, run-03]
+Found no bad channels.
+
+10:53:15 [Step-01][sub-215, run-04] Applying Maxwell filter to experimental data.
+10:53:15 [Step-01][sub-215, run-04]
+Found no bad channels.
+
+10:53:43 [Step-01][sub-215, run-05] Applying Maxwell filter to experimental data.
+10:53:43 [Step-01][sub-215, run-05]
+Found no bad channels.
+
+10:54:08 [Step-01][sub-215, run-06] Applying Maxwell filter to experimental data.
+10:54:08 [Step-01][sub-215, run-06]
+Found no bad channels.
+
+10:54:28 [Step-01][sub-215, run-07] Applying Maxwell filter to experimental data.
+10:54:28 [Step-01][sub-215, run-07]
+Found no bad channels.
+
+10:54:48 [Step-01][sub-215, run-08] Applying Maxwell filter to experimental data.
+10:54:48 [Step-01][sub-215, run-08]
+Found no bad channels.
+
+10:55:00 [Step-01][sub-231] Loading reference run: 01.
+10:55:07 [Step-01][sub-231, run-01] Applying Maxwell filter to experimental data.
+10:55:07 [Step-01][sub-231, run-01]
+Found no bad channels.
+
+10:55:18 [Step-01][sub-231] Processing empty-room recording …
+10:55:19 [Step-01][sub-231] Applying Maxwell filter to empty-room recording
+10:55:26 [Step-01][sub-231, run-02] Applying Maxwell filter to experimental data.
+10:55:26 [Step-01][sub-231, run-02]
+Found no bad channels.
+
+10:55:46 [Step-01][sub-231, run-03] Applying Maxwell filter to experimental data.
+10:55:46 [Step-01][sub-231, run-03]
+Found no bad channels.
+
+10:56:07 [Step-01][sub-231, run-04] Applying Maxwell filter to experimental data.
+10:56:07 [Step-01][sub-231, run-04]
+Found no bad channels.
+
+10:56:26 [Step-01][sub-231, run-05] Applying Maxwell filter to experimental data.
+10:56:26 [Step-01][sub-231, run-05]
+Found no bad channels.
+
+10:56:44 [Step-01][sub-231, run-06] Applying Maxwell filter to experimental data.
+10:56:44 [Step-01][sub-231, run-06]
+Found no bad channels.
+
+10:57:06 [Step-01][sub-231, run-07] Applying Maxwell filter to experimental data.
+10:57:06 [Step-01][sub-231, run-07]
+Found no bad channels.
+
+10:57:28 [Step-01][sub-231, run-08] Applying Maxwell filter to experimental data.
+10:57:28 [Step-01][sub-231, run-08]
+Found no bad channels.
+
+10:57:44 [Step-01][sub-486] Loading reference run: 01.
+10:57:48 [Step-01][sub-486, run-01] Applying Maxwell filter to experimental data.
+10:57:59 [Step-01][sub-486] Processing empty-room recording …
+10:57:59 [Step-01][sub-486] Applying Maxwell filter to empty-room recording
+10:58:05 [Step-01][sub-486, run-02] Applying Maxwell filter to experimental data.
+10:58:24 [Step-01][sub-486, run-03] Applying Maxwell filter to experimental data.
+10:58:41 [Step-01][sub-486, run-04] Applying Maxwell filter to experimental data.
+10:58:57 [Step-01][sub-486, run-05] Applying Maxwell filter to experimental data.
+10:59:15 [Step-01][sub-486, run-06] Applying Maxwell filter to experimental data.
+10:59:35 [Step-01][sub-486, run-07] Applying Maxwell filter to experimental data.
+10:59:50 [Step-01][sub-486, run-08] Applying Maxwell filter to experimental data.
+11:00:04 [Step-01][sub-788] Loading reference run: 01.
+11:00:09 [Step-01][sub-788, run-01] Applying Maxwell filter to experimental data.
+11:00:21 [Step-01][sub-788] Processing empty-room recording …
+11:00:22 [Step-01][sub-788] Applying Maxwell filter to empty-room recording
+11:00:30 [Step-01][sub-788, run-02] Applying Maxwell filter to experimental data.
+11:00:58 [Step-01][sub-788, run-03] Applying Maxwell filter to experimental data.
+11:01:19 [Step-01][sub-788, run-04] Applying Maxwell filter to experimental data.
+11:01:38 [Step-01][sub-788, run-05] Applying Maxwell filter to experimental data.
+11:02:04 [Step-01][sub-788, run-06] Applying Maxwell filter to experimental data.
+11:02:29 [Step-01][sub-788, run-07] Applying Maxwell filter to experimental data.
+11:02:53 [Step-01][sub-788, run-08] Applying Maxwell filter to experimental data.
+11:03:05 [Step-01][sub-840] Loading reference run: 01.
+11:03:11 [Step-01][sub-840, run-01] Applying Maxwell filter to experimental data.
+11:03:27 [Step-01][sub-840] Processing empty-room recording …
+11:03:28 [Step-01][sub-840] Applying Maxwell filter to empty-room recording
+11:03:34 [Step-01][sub-840, run-02] Applying Maxwell filter to experimental data.
+11:03:51 [Step-01][sub-840, run-03] Applying Maxwell filter to experimental data.
+11:04:07 [Step-01][sub-840, run-04] Applying Maxwell filter to experimental data.
+11:04:26 [Step-01][sub-840, run-05] Applying Maxwell filter to experimental data.
+11:04:43 [Step-01][sub-840, run-06] Applying Maxwell filter to experimental data.
+11:05:01 [Step-01][sub-840, run-07] Applying Maxwell filter to experimental data.
+11:05:19 [Step-01][sub-840, run-08] Applying Maxwell filter to experimental data.
+11:05:32 [Step-01] Completed Step 1: Data import
+2021-06-10 11:05:32 INFO Successfully finished running: import_and_maxfilter
+2021-06-10 11:05:32 INFO Now running: frequency_filter
+11:05:32 [Step-02] Running Step 2: Frequency filtering
+11:05:38 [Step-02][sub-197, run-01] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-01_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-01_proc-filt_raw.fif
+11:05:47 [Step-02][sub-197, run-01] Band-pass filtering data; range: 1.0 – 150.0 Hz
+11:05:52 [Step-02][sub-197, run-01] Filtering empty-room data between 1.0 and 150.0 Hz
+11:05:54 [Step-02][sub-197, run-01] Resampling experimental data to 500.0 Hz
+11:06:04 [Step-02][sub-197, run-01] Resampling empty-room recording.
+11:06:08 [Step-02][sub-197, run-02] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-02_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-02_proc-filt_raw.fif
+11:06:14 [Step-02][sub-197, run-02] Band-pass filtering data; range: 1.0 – 150.0 Hz
+11:06:19 [Step-02][sub-197, run-02] Filtering empty-room data between 1.0 and 150.0 Hz
+11:06:20 [Step-02][sub-197, run-02] Resampling experimental data to 500.0 Hz
+11:06:30 [Step-02][sub-197, run-02] Resampling empty-room recording.
+11:06:33 [Step-02][sub-197, run-03] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-03_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-03_proc-filt_raw.fif
+11:06:38 [Step-02][sub-197, run-03] Band-pass filtering data; range: 1.0 – 150.0 Hz
+11:06:43 [Step-02][sub-197, run-03] Filtering empty-room data between 1.0 and 150.0 Hz
+11:06:43 [Step-02][sub-197, run-03] Resampling experimental data to 500.0 Hz
+11:06:54 [Step-02][sub-197, run-03] Resampling empty-room recording.
+11:06:57 [Step-02][sub-197, run-04] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-04_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-04_proc-filt_raw.fif
+11:07:02 [Step-02][sub-197, run-04] Band-pass filtering data; range: 1.0 – 150.0 Hz
+11:07:06 [Step-02][sub-197, run-04] Filtering empty-room data between 1.0 and 150.0 Hz
+11:07:07 [Step-02][sub-197, run-04] Resampling experimental data to 500.0 Hz
+11:07:17 [Step-02][sub-197, run-04] Resampling empty-room recording.
+11:07:20 [Step-02][sub-197, run-05] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-05_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-05_proc-filt_raw.fif
+11:07:25 [Step-02][sub-197, run-05] Band-pass filtering data; range: 1.0 – 150.0 Hz
+11:07:30 [Step-02][sub-197, run-05] Filtering empty-room data between 1.0 and 150.0 Hz
+11:07:30 [Step-02][sub-197, run-05] Resampling experimental data to 500.0 Hz
+11:07:40 [Step-02][sub-197, run-05] Resampling empty-room recording.
+11:07:43 [Step-02][sub-197, run-06] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-06_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-06_proc-filt_raw.fif
+11:07:48 [Step-02][sub-197, run-06] Band-pass filtering data; range: 1.0 – 150.0 Hz
+11:07:53 [Step-02][sub-197, run-06] Filtering empty-room data between 1.0 and 150.0 Hz
+11:07:53 [Step-02][sub-197, run-06] Resampling experimental data to 500.0 Hz
+11:08:03 [Step-02][sub-197, run-06] Resampling empty-room recording.
+11:08:06 [Step-02][sub-197, run-07] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-07_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-07_proc-filt_raw.fif
+11:08:10 [Step-02][sub-197, run-07] Band-pass filtering data; range: 1.0 – 150.0 Hz
+11:08:15 [Step-02][sub-197, run-07] Filtering empty-room data between 1.0 and 150.0 Hz
+11:08:15 [Step-02][sub-197, run-07] Resampling experimental data to 500.0 Hz
+11:08:25 [Step-02][sub-197, run-07] Resampling empty-room recording.
+11:08:27 [Step-02][sub-197, run-08] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-08_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-08_proc-filt_raw.fif
+11:08:32 [Step-02][sub-197, run-08] Band-pass filtering data; range: 1.0 – 150.0 Hz
+11:08:37 [Step-02][sub-197, run-08] Filtering empty-room data between 1.0 and 150.0 Hz
+11:08:37 [Step-02][sub-197, run-08] Resampling experimental data to 500.0 Hz
+11:08:47 [Step-02][sub-197, run-08] Resampling empty-room recording.
+11:08:50 [Step-02][sub-215, run-01] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-01_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-01_proc-filt_raw.fif
+11:08:54 [Step-02][sub-215, run-01] Band-pass filtering data; range: 1.0 – 150.0 Hz
+11:08:58 [Step-02][sub-215, run-01] Filtering empty-room data between 1.0 and 150.0 Hz
+11:09:00 [Step-02][sub-215, run-01] Resampling experimental data to 500.0 Hz
+11:09:09 [Step-02][sub-215, run-01] Resampling empty-room recording.
+11:09:13 [Step-02][sub-215, run-02] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-02_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-02_proc-filt_raw.fif
+11:09:17 [Step-02][sub-215, run-02] Band-pass filtering data; range: 1.0 – 150.0 Hz
+11:09:23 [Step-02][sub-215, run-02] Filtering empty-room data between 1.0 and 150.0 Hz
+11:09:24 [Step-02][sub-215, run-02] Resampling experimental data to 500.0 Hz
+11:09:36 [Step-02][sub-215, run-02] Resampling empty-room recording.
+11:09:40 [Step-02][sub-215, run-03] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-03_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-03_proc-filt_raw.fif
+11:09:45 [Step-02][sub-215, run-03] Band-pass filtering data; range: 1.0 – 150.0 Hz
+11:09:50 [Step-02][sub-215, run-03] Filtering empty-room data between 1.0 and 150.0 Hz
+11:09:51 [Step-02][sub-215, run-03] Resampling experimental data to 500.0 Hz
+11:10:01 [Step-02][sub-215, run-03] Resampling empty-room recording.
+11:10:04 [Step-02][sub-215, run-04] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-04_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-04_proc-filt_raw.fif
+11:10:09 [Step-02][sub-215, run-04] Band-pass filtering data; range: 1.0 – 150.0 Hz
+11:10:14 [Step-02][sub-215, run-04] Filtering empty-room data between 1.0 and 150.0 Hz
+11:10:15 [Step-02][sub-215, run-04] Resampling experimental data to 500.0 Hz
+11:10:24 [Step-02][sub-215, run-04] Resampling empty-room recording.
+11:10:27 [Step-02][sub-215, run-05] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-05_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-05_proc-filt_raw.fif
+11:10:37 [Step-02][sub-215, run-05] Band-pass filtering data; range: 1.0 – 150.0 Hz
+11:10:42 [Step-02][sub-215, run-05] Filtering empty-room data between 1.0 and 150.0 Hz
+11:10:44 [Step-02][sub-215, run-05] Resampling experimental data to 500.0 Hz
+11:10:52 [Step-02][sub-215, run-05] Resampling empty-room recording.
+11:10:56 [Step-02][sub-215, run-06] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-06_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-06_proc-filt_raw.fif
+11:11:02 [Step-02][sub-215, run-06] Band-pass filtering data; range: 1.0 – 150.0 Hz
+11:11:07 [Step-02][sub-215, run-06] Filtering empty-room data between 1.0 and 150.0 Hz
+11:11:08 [Step-02][sub-215, run-06] Resampling experimental data to 500.0 Hz
+11:11:17 [Step-02][sub-215, run-06] Resampling empty-room recording.
+11:11:21 [Step-02][sub-215, run-07] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-07_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-07_proc-filt_raw.fif
+11:11:25 [Step-02][sub-215, run-07] Band-pass filtering data; range: 1.0 – 150.0 Hz
+11:11:29 [Step-02][sub-215, run-07] Filtering empty-room data between 1.0 and 150.0 Hz
+11:11:30 [Step-02][sub-215, run-07] Resampling experimental data to 500.0 Hz
+11:11:40 [Step-02][sub-215, run-07] Resampling empty-room recording.
+11:11:44 [Step-02][sub-215, run-08] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-08_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-08_proc-filt_raw.fif
+11:11:49 [Step-02][sub-215, run-08] Band-pass filtering data; range: 1.0 – 150.0 Hz
+11:11:53 [Step-02][sub-215, run-08] Filtering empty-room data between 1.0 and 150.0 Hz
+11:11:54 [Step-02][sub-215, run-08] Resampling experimental data to 500.0 Hz
+11:12:03 [Step-02][sub-215, run-08] Resampling empty-room recording.
+11:12:06 [Step-02][sub-231, run-01] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-231/meg/sub-231_task-tiwm_run-01_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-231/meg/sub-231_task-tiwm_run-01_proc-filt_raw.fif
+11:12:10 [Step-02][sub-231, run-01] Band-pass filtering data; range: 1.0 – 150.0 Hz
+11:12:14 [Step-02][sub-231, run-01] Filtering empty-room data between 1.0 and 150.0 Hz
+11:12:16 [Step-02][sub-231, run-01] Resampling experimental data to 500.0 Hz
+11:12:25 [Step-02][sub-231, run-01] Resampling empty-room recording.
+11:12:29 [Step-02][sub-231, run-02] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-231/meg/sub-231_task-tiwm_run-02_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-231/meg/sub-231_task-tiwm_run-02_proc-filt_raw.fif
+11:12:33 [Step-02][sub-231, run-02] Band-pass filtering data; range: 1.0 – 150.0 Hz
+11:12:37 [Step-02][sub-231, run-02] Filtering empty-room data between 1.0 and 150.0 Hz
+11:12:38 [Step-02][sub-231, run-02] Resampling experimental data to 500.0 Hz
+11:12:48 [Step-02][sub-231, run-02] Resampling empty-room recording.
+11:12:51 [Step-02][sub-231, run-03] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-231/meg/sub-231_task-tiwm_run-03_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-231/meg/sub-231_task-tiwm_run-03_proc-filt_raw.fif
+11:12:59 [Step-02][sub-231, run-03] Band-pass filtering data; range: 1.0 – 150.0 Hz
+11:13:05 [Step-02][sub-231, run-03] Filtering empty-room data between 1.0 and 150.0 Hz
+11:13:05 [Step-02][sub-231, run-03] Resampling experimental data to 500.0 Hz
+11:13:15 [Step-02][sub-231, run-03] Resampling empty-room recording.
+11:13:20 [Step-02][sub-231, run-04] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-231/meg/sub-231_task-tiwm_run-04_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-231/meg/sub-231_task-tiwm_run-04_proc-filt_raw.fif
+11:13:25 [Step-02][sub-231, run-04] Band-pass filtering data; range: 1.0 – 150.0 Hz
+11:13:30 [Step-02][sub-231, run-04] Filtering empty-room data between 1.0 and 150.0 Hz
+11:13:31 [Step-02][sub-231, run-04] Resampling experimental data to 500.0 Hz
+11:13:45 [Step-02][sub-231, run-04] Resampling empty-room recording.
+11:13:51 [Step-02][sub-231, run-05] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-231/meg/sub-231_task-tiwm_run-05_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-231/meg/sub-231_task-tiwm_run-05_proc-filt_raw.fif
+11:13:57 [Step-02][sub-231, run-05] Band-pass filtering data; range: 1.0 – 150.0 Hz
+11:14:05 [Step-02][sub-231, run-05] Filtering empty-room data between 1.0 and 150.0 Hz
+11:14:07 [Step-02][sub-231, run-05] Resampling experimental data to 500.0 Hz
+11:14:25 [Step-02][sub-231, run-05] Resampling empty-room recording.
+11:14:30 [Step-02][sub-231, run-06] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-231/meg/sub-231_task-tiwm_run-06_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-231/meg/sub-231_task-tiwm_run-06_proc-filt_raw.fif
+11:14:35 [Step-02][sub-231, run-06] Band-pass filtering data; range: 1.0 – 150.0 Hz
+11:14:40 [Step-02][sub-231, run-06] Filtering empty-room data between 1.0 and 150.0 Hz
+11:14:41 [Step-02][sub-231, run-06] Resampling experimental data to 500.0 Hz
+11:14:53 [Step-02][sub-231, run-06] Resampling empty-room recording.
+11:14:57 [Step-02][sub-231, run-07] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-231/meg/sub-231_task-tiwm_run-07_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-231/meg/sub-231_task-tiwm_run-07_proc-filt_raw.fif
+11:15:02 [Step-02][sub-231, run-07] Band-pass filtering data; range: 1.0 – 150.0 Hz
+11:15:07 [Step-02][sub-231, run-07] Filtering empty-room data between 1.0 and 150.0 Hz
+11:15:08 [Step-02][sub-231, run-07] Resampling experimental data to 500.0 Hz
+11:15:19 [Step-02][sub-231, run-07] Resampling empty-room recording.
+11:15:23 [Step-02][sub-231, run-08] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-231/meg/sub-231_task-tiwm_run-08_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-231/meg/sub-231_task-tiwm_run-08_proc-filt_raw.fif
+11:15:27 [Step-02][sub-231, run-08] Band-pass filtering data; range: 1.0 – 150.0 Hz
+11:15:31 [Step-02][sub-231, run-08] Filtering empty-room data between 1.0 and 150.0 Hz
+11:15:32 [Step-02][sub-231, run-08] Resampling experimental data to 500.0 Hz
+11:15:41 [Step-02][sub-231, run-08] Resampling empty-room recording.
+11:15:45 [Step-02][sub-486, run-01] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-486/meg/sub-486_task-tiwm_run-01_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-486/meg/sub-486_task-tiwm_run-01_proc-filt_raw.fif
+11:15:49 [Step-02][sub-486, run-01] Band-pass filtering data; range: 1.0 – 150.0 Hz
+11:15:53 [Step-02][sub-486, run-01] Filtering empty-room data between 1.0 and 150.0 Hz
+11:15:55 [Step-02][sub-486, run-01] Resampling experimental data to 500.0 Hz
+11:16:03 [Step-02][sub-486, run-01] Resampling empty-room recording.
+11:16:06 [Step-02][sub-486, run-02] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-486/meg/sub-486_task-tiwm_run-02_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-486/meg/sub-486_task-tiwm_run-02_proc-filt_raw.fif
+11:16:11 [Step-02][sub-486, run-02] Band-pass filtering data; range: 1.0 – 150.0 Hz
+11:16:15 [Step-02][sub-486, run-02] Filtering empty-room data between 1.0 and 150.0 Hz
+11:16:16 [Step-02][sub-486, run-02] Resampling experimental data to 500.0 Hz
+11:16:24 [Step-02][sub-486, run-02] Resampling empty-room recording.
+11:16:27 [Step-02][sub-486, run-03] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-486/meg/sub-486_task-tiwm_run-03_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-486/meg/sub-486_task-tiwm_run-03_proc-filt_raw.fif
+11:16:31 [Step-02][sub-486, run-03] Band-pass filtering data; range: 1.0 – 150.0 Hz
+11:16:36 [Step-02][sub-486, run-03] Filtering empty-room data between 1.0 and 150.0 Hz
+11:16:36 [Step-02][sub-486, run-03] Resampling experimental data to 500.0 Hz
+11:16:45 [Step-02][sub-486, run-03] Resampling empty-room recording.
+11:16:48 [Step-02][sub-486, run-04] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-486/meg/sub-486_task-tiwm_run-04_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-486/meg/sub-486_task-tiwm_run-04_proc-filt_raw.fif
+11:16:51 [Step-02][sub-486, run-04] Band-pass filtering data; range: 1.0 – 150.0 Hz
+11:16:55 [Step-02][sub-486, run-04] Filtering empty-room data between 1.0 and 150.0 Hz
+11:16:56 [Step-02][sub-486, run-04] Resampling experimental data to 500.0 Hz
+11:17:05 [Step-02][sub-486, run-04] Resampling empty-room recording.
+11:17:07 [Step-02][sub-486, run-05] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-486/meg/sub-486_task-tiwm_run-05_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-486/meg/sub-486_task-tiwm_run-05_proc-filt_raw.fif
+11:17:12 [Step-02][sub-486, run-05] Band-pass filtering data; range: 1.0 – 150.0 Hz
+11:17:17 [Step-02][sub-486, run-05] Filtering empty-room data between 1.0 and 150.0 Hz
+11:17:17 [Step-02][sub-486, run-05] Resampling experimental data to 500.0 Hz
+11:17:27 [Step-02][sub-486, run-05] Resampling empty-room recording.
+11:17:29 [Step-02][sub-486, run-06] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-486/meg/sub-486_task-tiwm_run-06_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-486/meg/sub-486_task-tiwm_run-06_proc-filt_raw.fif
+11:17:35 [Step-02][sub-486, run-06] Band-pass filtering data; range: 1.0 – 150.0 Hz
+11:17:39 [Step-02][sub-486, run-06] Filtering empty-room data between 1.0 and 150.0 Hz
+11:17:40 [Step-02][sub-486, run-06] Resampling experimental data to 500.0 Hz
+11:17:49 [Step-02][sub-486, run-06] Resampling empty-room recording.
+11:17:52 [Step-02][sub-486, run-07] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-486/meg/sub-486_task-tiwm_run-07_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-486/meg/sub-486_task-tiwm_run-07_proc-filt_raw.fif
+11:17:54 [Step-02][sub-486, run-07] Band-pass filtering data; range: 1.0 – 150.0 Hz
+11:17:58 [Step-02][sub-486, run-07] Filtering empty-room data between 1.0 and 150.0 Hz
+11:17:59 [Step-02][sub-486, run-07] Resampling experimental data to 500.0 Hz
+11:18:08 [Step-02][sub-486, run-07] Resampling empty-room recording.
+11:18:10 [Step-02][sub-486, run-08] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-486/meg/sub-486_task-tiwm_run-08_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-486/meg/sub-486_task-tiwm_run-08_proc-filt_raw.fif
+11:18:14 [Step-02][sub-486, run-08] Band-pass filtering data; range: 1.0 – 150.0 Hz
+11:18:18 [Step-02][sub-486, run-08] Filtering empty-room data between 1.0 and 150.0 Hz
+11:18:19 [Step-02][sub-486, run-08] Resampling experimental data to 500.0 Hz
+11:18:28 [Step-02][sub-486, run-08] Resampling empty-room recording.
+11:18:31 [Step-02][sub-788, run-01] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-788/meg/sub-788_task-tiwm_run-01_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-788/meg/sub-788_task-tiwm_run-01_proc-filt_raw.fif
+11:18:35 [Step-02][sub-788, run-01] Band-pass filtering data; range: 1.0 – 150.0 Hz
+11:18:39 [Step-02][sub-788, run-01] Filtering empty-room data between 1.0 and 150.0 Hz
+11:18:42 [Step-02][sub-788, run-01] Resampling experimental data to 500.0 Hz
+11:18:51 [Step-02][sub-788, run-01] Resampling empty-room recording.
+11:18:56 [Step-02][sub-788, run-02] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-788/meg/sub-788_task-tiwm_run-02_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-788/meg/sub-788_task-tiwm_run-02_proc-filt_raw.fif
+11:19:00 [Step-02][sub-788, run-02] Band-pass filtering data; range: 1.0 – 150.0 Hz
+11:19:05 [Step-02][sub-788, run-02] Filtering empty-room data between 1.0 and 150.0 Hz
+11:19:06 [Step-02][sub-788, run-02] Resampling experimental data to 500.0 Hz
+11:19:16 [Step-02][sub-788, run-02] Resampling empty-room recording.
+11:19:20 [Step-02][sub-788, run-03] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-788/meg/sub-788_task-tiwm_run-03_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-788/meg/sub-788_task-tiwm_run-03_proc-filt_raw.fif
+11:19:24 [Step-02][sub-788, run-03] Band-pass filtering data; range: 1.0 – 150.0 Hz
+11:19:29 [Step-02][sub-788, run-03] Filtering empty-room data between 1.0 and 150.0 Hz
+11:19:30 [Step-02][sub-788, run-03] Resampling experimental data to 500.0 Hz
+11:19:39 [Step-02][sub-788, run-03] Resampling empty-room recording.
+11:19:43 [Step-02][sub-788, run-04] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-788/meg/sub-788_task-tiwm_run-04_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-788/meg/sub-788_task-tiwm_run-04_proc-filt_raw.fif
+11:19:46 [Step-02][sub-788, run-04] Band-pass filtering data; range: 1.0 – 150.0 Hz
+11:19:51 [Step-02][sub-788, run-04] Filtering empty-room data between 1.0 and 150.0 Hz
+11:19:52 [Step-02][sub-788, run-04] Resampling experimental data to 500.0 Hz
+11:20:01 [Step-02][sub-788, run-04] Resampling empty-room recording.
+11:20:05 [Step-02][sub-788, run-05] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-788/meg/sub-788_task-tiwm_run-05_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-788/meg/sub-788_task-tiwm_run-05_proc-filt_raw.fif
+11:20:09 [Step-02][sub-788, run-05] Band-pass filtering data; range: 1.0 – 150.0 Hz
+11:20:13 [Step-02][sub-788, run-05] Filtering empty-room data between 1.0 and 150.0 Hz
+11:20:14 [Step-02][sub-788, run-05] Resampling experimental data to 500.0 Hz
+11:20:24 [Step-02][sub-788, run-05] Resampling empty-room recording.
+11:20:28 [Step-02][sub-788, run-06] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-788/meg/sub-788_task-tiwm_run-06_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-788/meg/sub-788_task-tiwm_run-06_proc-filt_raw.fif
+11:20:33 [Step-02][sub-788, run-06] Band-pass filtering data; range: 1.0 – 150.0 Hz
+11:20:38 [Step-02][sub-788, run-06] Filtering empty-room data between 1.0 and 150.0 Hz
+11:20:39 [Step-02][sub-788, run-06] Resampling experimental data to 500.0 Hz
+11:20:48 [Step-02][sub-788, run-06] Resampling empty-room recording.
+11:20:52 [Step-02][sub-788, run-07] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-788/meg/sub-788_task-tiwm_run-07_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-788/meg/sub-788_task-tiwm_run-07_proc-filt_raw.fif
+11:20:56 [Step-02][sub-788, run-07] Band-pass filtering data; range: 1.0 – 150.0 Hz
+11:21:01 [Step-02][sub-788, run-07] Filtering empty-room data between 1.0 and 150.0 Hz
+11:21:02 [Step-02][sub-788, run-07] Resampling experimental data to 500.0 Hz
+11:21:11 [Step-02][sub-788, run-07] Resampling empty-room recording.
+11:21:15 [Step-02][sub-788, run-08] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-788/meg/sub-788_task-tiwm_run-08_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-788/meg/sub-788_task-tiwm_run-08_proc-filt_raw.fif
+11:21:18 [Step-02][sub-788, run-08] Band-pass filtering data; range: 1.0 – 150.0 Hz
+11:21:23 [Step-02][sub-788, run-08] Filtering empty-room data between 1.0 and 150.0 Hz
+11:21:24 [Step-02][sub-788, run-08] Resampling experimental data to 500.0 Hz
+11:21:34 [Step-02][sub-788, run-08] Resampling empty-room recording.
+11:21:37 [Step-02][sub-840, run-01] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-840/meg/sub-840_task-tiwm_run-01_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-840/meg/sub-840_task-tiwm_run-01_proc-filt_raw.fif
+11:21:44 [Step-02][sub-840, run-01] Band-pass filtering data; range: 1.0 – 150.0 Hz
+11:21:48 [Step-02][sub-840, run-01] Filtering empty-room data between 1.0 and 150.0 Hz
+11:21:50 [Step-02][sub-840, run-01] Resampling experimental data to 500.0 Hz
+11:22:00 [Step-02][sub-840, run-01] Resampling empty-room recording.
+11:22:03 [Step-02][sub-840, run-02] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-840/meg/sub-840_task-tiwm_run-02_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-840/meg/sub-840_task-tiwm_run-02_proc-filt_raw.fif
+11:22:07 [Step-02][sub-840, run-02] Band-pass filtering data; range: 1.0 – 150.0 Hz
+11:22:12 [Step-02][sub-840, run-02] Filtering empty-room data between 1.0 and 150.0 Hz
+11:22:13 [Step-02][sub-840, run-02] Resampling experimental data to 500.0 Hz
+11:22:22 [Step-02][sub-840, run-02] Resampling empty-room recording.
+11:22:25 [Step-02][sub-840, run-03] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-840/meg/sub-840_task-tiwm_run-03_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-840/meg/sub-840_task-tiwm_run-03_proc-filt_raw.fif
+11:22:29 [Step-02][sub-840, run-03] Band-pass filtering data; range: 1.0 – 150.0 Hz
+11:22:33 [Step-02][sub-840, run-03] Filtering empty-room data between 1.0 and 150.0 Hz
+11:22:34 [Step-02][sub-840, run-03] Resampling experimental data to 500.0 Hz
+11:22:43 [Step-02][sub-840, run-03] Resampling empty-room recording.
+11:22:46 [Step-02][sub-840, run-04] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-840/meg/sub-840_task-tiwm_run-04_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-840/meg/sub-840_task-tiwm_run-04_proc-filt_raw.fif
+11:22:48 [Step-02][sub-840, run-04] Band-pass filtering data; range: 1.0 – 150.0 Hz
+11:22:52 [Step-02][sub-840, run-04] Filtering empty-room data between 1.0 and 150.0 Hz
+11:22:53 [Step-02][sub-840, run-04] Resampling experimental data to 500.0 Hz
+11:23:03 [Step-02][sub-840, run-04] Resampling empty-room recording.
+11:23:06 [Step-02][sub-840, run-05] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-840/meg/sub-840_task-tiwm_run-05_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-840/meg/sub-840_task-tiwm_run-05_proc-filt_raw.fif
+11:23:08 [Step-02][sub-840, run-05] Band-pass filtering data; range: 1.0 – 150.0 Hz
+11:23:13 [Step-02][sub-840, run-05] Filtering empty-room data between 1.0 and 150.0 Hz
+11:23:13 [Step-02][sub-840, run-05] Resampling experimental data to 500.0 Hz
+11:23:22 [Step-02][sub-840, run-05] Resampling empty-room recording.
+11:23:26 [Step-02][sub-840, run-06] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-840/meg/sub-840_task-tiwm_run-06_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-840/meg/sub-840_task-tiwm_run-06_proc-filt_raw.fif
+11:23:28 [Step-02][sub-840, run-06] Band-pass filtering data; range: 1.0 – 150.0 Hz
+11:23:31 [Step-02][sub-840, run-06] Filtering empty-room data between 1.0 and 150.0 Hz
+11:23:32 [Step-02][sub-840, run-06] Resampling experimental data to 500.0 Hz
+11:23:41 [Step-02][sub-840, run-06] Resampling empty-room recording.
+11:23:44 [Step-02][sub-840, run-07] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-840/meg/sub-840_task-tiwm_run-07_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-840/meg/sub-840_task-tiwm_run-07_proc-filt_raw.fif
+11:23:46 [Step-02][sub-840, run-07] Band-pass filtering data; range: 1.0 – 150.0 Hz
+11:23:51 [Step-02][sub-840, run-07] Filtering empty-room data between 1.0 and 150.0 Hz
+11:23:51 [Step-02][sub-840, run-07] Resampling experimental data to 500.0 Hz
+11:24:00 [Step-02][sub-840, run-07] Resampling empty-room recording.
+11:24:03 [Step-02][sub-840, run-08] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-840/meg/sub-840_task-tiwm_run-08_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-840/meg/sub-840_task-tiwm_run-08_proc-filt_raw.fif
+11:24:05 [Step-02][sub-840, run-08] Band-pass filtering data; range: 1.0 – 150.0 Hz
+11:24:09 [Step-02][sub-840, run-08] Filtering empty-room data between 1.0 and 150.0 Hz
+11:24:10 [Step-02][sub-840, run-08] Resampling experimental data to 500.0 Hz
+11:24:18 [Step-02][sub-840, run-08] Resampling empty-room recording.
+11:24:20 [Step-02] Completed 2: Frequency filtering
+2021-06-10 11:24:20 INFO Successfully finished running: frequency_filter
+2021-06-10 11:24:20 INFO Now running: make_epochs
+11:24:20 [Step-03] Running Step 3: Epoching
+11:24:25 [Step-03][sub-197, run-01] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-01_proc-filt_raw.fif and creating epochs
+11:24:26 [Step-03][sub-197, run-01] Creating task-related epochs …
+11:24:26 [Step-03][sub-197, run-02] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-02_proc-filt_raw.fif and creating epochs
+11:24:28 [Step-03][sub-197, run-02] Creating task-related epochs …
+11:24:28 [Step-03][sub-197, run-03] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-03_proc-filt_raw.fif and creating epochs
+11:24:29 [Step-03][sub-197, run-03] Creating task-related epochs …
+11:24:29 [Step-03][sub-197, run-04] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-04_proc-filt_raw.fif and creating epochs
+11:24:30 [Step-03][sub-197, run-04] Creating task-related epochs …
+11:24:30 [Step-03][sub-197, run-05] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-05_proc-filt_raw.fif and creating epochs
+11:24:31 [Step-03][sub-197, run-05] Creating task-related epochs …
+11:24:31 [Step-03][sub-197, run-06] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-06_proc-filt_raw.fif and creating epochs
+11:24:32 [Step-03][sub-197, run-06] Creating task-related epochs …
+11:24:32 [Step-03][sub-197, run-07] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-07_proc-filt_raw.fif and creating epochs
+11:24:33 [Step-03][sub-197, run-07] Creating task-related epochs …
+11:24:33 [Step-03][sub-197, run-08] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-08_proc-filt_raw.fif and creating epochs
+11:24:34 [Step-03][sub-197, run-08] Creating task-related epochs …
+11:24:38 [Step-03][sub-197] Created 303 epochs with time interval: -4.6 – 5.0 sec
+11:24:38 [Step-03][sub-197] Writing epochs to disk
+Overwriting existing file.
+11:24:46 [Step-03][sub-215, run-01] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-01_proc-filt_raw.fif and creating epochs
+11:24:46 [Step-03][sub-215, run-01] Creating task-related epochs …
+11:24:46 [Step-03][sub-215, run-02] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-02_proc-filt_raw.fif and creating epochs
+11:24:48 [Step-03][sub-215, run-02] Creating task-related epochs …
+11:24:48 [Step-03][sub-215, run-03] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-03_proc-filt_raw.fif and creating epochs
+11:24:49 [Step-03][sub-215, run-03] Creating task-related epochs …
+11:24:49 [Step-03][sub-215, run-04] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-04_proc-filt_raw.fif and creating epochs
+11:24:50 [Step-03][sub-215, run-04] Creating task-related epochs …
+11:24:50 [Step-03][sub-215, run-05] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-05_proc-filt_raw.fif and creating epochs
+11:24:51 [Step-03][sub-215, run-05] Creating task-related epochs …
+11:24:51 [Step-03][sub-215, run-06] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-06_proc-filt_raw.fif and creating epochs
+11:24:52 [Step-03][sub-215, run-06] Creating task-related epochs …
+11:24:52 [Step-03][sub-215, run-07] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-07_proc-filt_raw.fif and creating epochs
+11:24:53 [Step-03][sub-215, run-07] Creating task-related epochs …
+11:24:53 [Step-03][sub-215, run-08] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-08_proc-filt_raw.fif and creating epochs
+11:24:54 [Step-03][sub-215, run-08] Creating task-related epochs …
+11:24:57 [Step-03][sub-215] Created 291 epochs with time interval: -4.6 – 5.0 sec
+11:24:57 [Step-03][sub-215] Writing epochs to disk
+Overwriting existing file.
+11:25:09 [Step-03][sub-231, run-01] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-231/meg/sub-231_task-tiwm_run-01_proc-filt_raw.fif and creating epochs
+11:25:10 [Step-03][sub-231, run-01] Creating task-related epochs …
+11:25:10 [Step-03][sub-231, run-02] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-231/meg/sub-231_task-tiwm_run-02_proc-filt_raw.fif and creating epochs
+11:25:10 [Step-03][sub-231, run-02] Creating task-related epochs …
+11:25:10 [Step-03][sub-231, run-03] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-231/meg/sub-231_task-tiwm_run-03_proc-filt_raw.fif and creating epochs
+11:25:11 [Step-03][sub-231, run-03] Creating task-related epochs …
+11:25:12 [Step-03][sub-231, run-04] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-231/meg/sub-231_task-tiwm_run-04_proc-filt_raw.fif and creating epochs
+11:25:13 [Step-03][sub-231, run-04] Creating task-related epochs …
+11:25:13 [Step-03][sub-231, run-05] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-231/meg/sub-231_task-tiwm_run-05_proc-filt_raw.fif and creating epochs
+11:25:13 [Step-03][sub-231, run-05] Creating task-related epochs …
+11:25:14 [Step-03][sub-231, run-06] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-231/meg/sub-231_task-tiwm_run-06_proc-filt_raw.fif and creating epochs
+11:25:15 [Step-03][sub-231, run-06] Creating task-related epochs …
+11:25:15 [Step-03][sub-231, run-07] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-231/meg/sub-231_task-tiwm_run-07_proc-filt_raw.fif and creating epochs
+11:25:15 [Step-03][sub-231, run-07] Creating task-related epochs …
+11:25:16 [Step-03][sub-231, run-08] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-231/meg/sub-231_task-tiwm_run-08_proc-filt_raw.fif and creating epochs
+11:25:16 [Step-03][sub-231, run-08] Creating task-related epochs …
+11:25:21 [Step-03][sub-231] Created 292 epochs with time interval: -4.6 – 5.0 sec
+11:25:21 [Step-03][sub-231] Writing epochs to disk
+Overwriting existing file.
+11:25:31 [Step-03][sub-486, run-01] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-486/meg/sub-486_task-tiwm_run-01_proc-filt_raw.fif and creating epochs
+11:25:32 [Step-03][sub-486, run-01] Creating task-related epochs …
+11:25:32 [Step-03][sub-486, run-02] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-486/meg/sub-486_task-tiwm_run-02_proc-filt_raw.fif and creating epochs
+11:25:33 [Step-03][sub-486, run-02] Creating task-related epochs …
+11:25:33 [Step-03][sub-486, run-03] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-486/meg/sub-486_task-tiwm_run-03_proc-filt_raw.fif and creating epochs
+11:25:34 [Step-03][sub-486, run-03] Creating task-related epochs …
+11:25:34 [Step-03][sub-486, run-04] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-486/meg/sub-486_task-tiwm_run-04_proc-filt_raw.fif and creating epochs
+11:25:35 [Step-03][sub-486, run-04] Creating task-related epochs …
+11:25:35 [Step-03][sub-486, run-05] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-486/meg/sub-486_task-tiwm_run-05_proc-filt_raw.fif and creating epochs
+11:25:36 [Step-03][sub-486, run-05] Creating task-related epochs …
+11:25:36 [Step-03][sub-486, run-06] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-486/meg/sub-486_task-tiwm_run-06_proc-filt_raw.fif and creating epochs
+11:25:37 [Step-03][sub-486, run-06] Creating task-related epochs …
+11:25:37 [Step-03][sub-486, run-07] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-486/meg/sub-486_task-tiwm_run-07_proc-filt_raw.fif and creating epochs
+11:25:38 [Step-03][sub-486, run-07] Creating task-related epochs …
+11:25:38 [Step-03][sub-486, run-08] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-486/meg/sub-486_task-tiwm_run-08_proc-filt_raw.fif and creating epochs
+11:25:39 [Step-03][sub-486, run-08] Creating task-related epochs …
+11:25:41 [Step-03][sub-486] Created 289 epochs with time interval: -4.6 – 5.0 sec
+11:25:41 [Step-03][sub-486] Writing epochs to disk
+Overwriting existing file.
+11:25:58 [Step-03][sub-788, run-01] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-788/meg/sub-788_task-tiwm_run-01_proc-filt_raw.fif and creating epochs
+11:25:59 [Step-03][sub-788, run-01] Creating task-related epochs …
+11:25:59 [Step-03][sub-788, run-02] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-788/meg/sub-788_task-tiwm_run-02_proc-filt_raw.fif and creating epochs
+11:26:00 [Step-03][sub-788, run-02] Creating task-related epochs …
+11:26:00 [Step-03][sub-788, run-03] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-788/meg/sub-788_task-tiwm_run-03_proc-filt_raw.fif and creating epochs
+11:26:01 [Step-03][sub-788, run-03] Creating task-related epochs …
+11:26:01 [Step-03][sub-788, run-04] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-788/meg/sub-788_task-tiwm_run-04_proc-filt_raw.fif and creating epochs
+11:26:02 [Step-03][sub-788, run-04] Creating task-related epochs …
+11:26:02 [Step-03][sub-788, run-05] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-788/meg/sub-788_task-tiwm_run-05_proc-filt_raw.fif and creating epochs
+11:26:03 [Step-03][sub-788, run-05] Creating task-related epochs …
+11:26:03 [Step-03][sub-788, run-06] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-788/meg/sub-788_task-tiwm_run-06_proc-filt_raw.fif and creating epochs
+11:26:04 [Step-03][sub-788, run-06] Creating task-related epochs …
+11:26:04 [Step-03][sub-788, run-07] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-788/meg/sub-788_task-tiwm_run-07_proc-filt_raw.fif and creating epochs
+11:26:05 [Step-03][sub-788, run-07] Creating task-related epochs …
+11:26:05 [Step-03][sub-788, run-08] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-788/meg/sub-788_task-tiwm_run-08_proc-filt_raw.fif and creating epochs
+11:26:06 [Step-03][sub-788, run-08] Creating task-related epochs …
+11:26:09 [Step-03][sub-788] Created 289 epochs with time interval: -4.6 – 5.0 sec
+11:26:09 [Step-03][sub-788] Writing epochs to disk
+Overwriting existing file.
+11:26:15 [Step-03][sub-840, run-01] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-840/meg/sub-840_task-tiwm_run-01_proc-filt_raw.fif and creating epochs
+11:26:16 [Step-03][sub-840, run-01] Creating task-related epochs …
+11:26:16 [Step-03][sub-840, run-02] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-840/meg/sub-840_task-tiwm_run-02_proc-filt_raw.fif and creating epochs
+11:26:17 [Step-03][sub-840, run-02] Creating task-related epochs …
+11:26:17 [Step-03][sub-840, run-03] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-840/meg/sub-840_task-tiwm_run-03_proc-filt_raw.fif and creating epochs
+11:26:18 [Step-03][sub-840, run-03] Creating task-related epochs …
+11:26:18 [Step-03][sub-840, run-04] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-840/meg/sub-840_task-tiwm_run-04_proc-filt_raw.fif and creating epochs
+11:26:19 [Step-03][sub-840, run-04] Creating task-related epochs …
+11:26:19 [Step-03][sub-840, run-05] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-840/meg/sub-840_task-tiwm_run-05_proc-filt_raw.fif and creating epochs
+11:26:20 [Step-03][sub-840, run-05] Creating task-related epochs …
+11:26:20 [Step-03][sub-840, run-06] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-840/meg/sub-840_task-tiwm_run-06_proc-filt_raw.fif and creating epochs
+11:26:21 [Step-03][sub-840, run-06] Creating task-related epochs …
+11:26:21 [Step-03][sub-840, run-07] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-840/meg/sub-840_task-tiwm_run-07_proc-filt_raw.fif and creating epochs
+11:26:22 [Step-03][sub-840, run-07] Creating task-related epochs …
+11:26:22 [Step-03][sub-840, run-08] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-840/meg/sub-840_task-tiwm_run-08_proc-filt_raw.fif and creating epochs
+11:26:23 [Step-03][sub-840, run-08] Creating task-related epochs …
+11:26:25 [Step-03][sub-840] Created 290 epochs with time interval: -4.6 – 5.0 sec
+11:26:25 [Step-03][sub-840] Writing epochs to disk
+Overwriting existing file.
+11:26:27 [Step-03] Completed Step 3: Epoching
+2021-06-10 11:26:27 INFO Successfully finished running: make_epochs
+2021-06-10 11:26:27 INFO Now running: -run_ica
+11:26:27 [Step-04] Running Step 4: Compute ICA
+11:26:30 [Step-03][sub-197, run-01] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-01_proc-filt_raw.fif and creating epochs
+11:26:31 [Step-04][sub-197, run-01] Creating EOG epochs …
+11:26:31 [Step-04][sub-197, run-01] Creating ECG epochs …
+11:26:34 [Step-04][sub-197, run-01] Applying high-pass filter with 1.0 Hz cutoff …
+11:26:36 [Step-03][sub-197, run-01] Creating task-related epochs …
+11:26:36 [Step-03][sub-197, run-02] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-02_proc-filt_raw.fif and creating epochs
+11:26:37 [Step-04][sub-197, run-02] Creating EOG epochs …
+11:26:38 [Step-04][sub-197, run-02] Creating ECG epochs …
+11:26:41 [Step-04][sub-197, run-02] Applying high-pass filter with 1.0 Hz cutoff …
+11:26:43 [Step-03][sub-197, run-02] Creating task-related epochs …
+11:26:43 [Step-03][sub-197, run-03] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-03_proc-filt_raw.fif and creating epochs
+11:26:44 [Step-04][sub-197, run-03] Creating EOG epochs …
+11:26:45 [Step-04][sub-197, run-03] Creating ECG epochs …
+11:26:47 [Step-04][sub-197, run-03] Applying high-pass filter with 1.0 Hz cutoff …
+11:26:49 [Step-03][sub-197, run-03] Creating task-related epochs …
+11:26:49 [Step-03][sub-197, run-04] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-04_proc-filt_raw.fif and creating epochs
+11:26:50 [Step-04][sub-197, run-04] Creating EOG epochs …
+11:26:51 [Step-04][sub-197, run-04] Creating ECG epochs …
+11:26:57 [Step-04][sub-197, run-04] Applying high-pass filter with 1.0 Hz cutoff …
+11:26:59 [Step-03][sub-197, run-04] Creating task-related epochs …
+11:26:59 [Step-03][sub-197, run-05] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-05_proc-filt_raw.fif and creating epochs
+11:27:00 [Step-04][sub-197, run-05] Creating EOG epochs …
+11:27:00 [Step-04][sub-197, run-05] Creating ECG epochs …
+11:27:05 [Step-04][sub-197, run-05] Applying high-pass filter with 1.0 Hz cutoff …
+11:27:07 [Step-03][sub-197, run-05] Creating task-related epochs …
+11:27:07 [Step-03][sub-197, run-06] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-06_proc-filt_raw.fif and creating epochs
+11:27:08 [Step-04][sub-197, run-06] Creating EOG epochs …
+11:27:11 [Step-04][sub-197, run-06] Creating ECG epochs …
+11:27:22 [Step-04][sub-197, run-06] Applying high-pass filter with 1.0 Hz cutoff …
+11:27:25 [Step-03][sub-197, run-06] Creating task-related epochs …
+11:27:25 [Step-03][sub-197, run-07] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-07_proc-filt_raw.fif and creating epochs
+11:27:26 [Step-04][sub-197, run-07] Creating EOG epochs …
+11:27:28 [Step-04][sub-197, run-07] Creating ECG epochs …
+11:27:31 [Step-04][sub-197, run-07] Applying high-pass filter with 1.0 Hz cutoff …
+11:27:33 [Step-03][sub-197, run-07] Creating task-related epochs …
+11:27:33 [Step-03][sub-197, run-08] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-08_proc-filt_raw.fif and creating epochs
+11:27:34 [Step-04][sub-197, run-08] Creating EOG epochs …
+11:27:38 [Step-04][sub-197, run-08] Creating ECG epochs …
+11:27:48 [Step-04][sub-197, run-08] Applying high-pass filter with 1.0 Hz cutoff …
+11:27:50 [Step-03][sub-197, run-08] Creating task-related epochs …
+11:29:01 [Step-04][sub-197] Calculating ICA solution.
+11:29:53 [Step-04][sub-197] Fit 70 components (explaining 99.9% of the variance) in 188 iterations.
+11:29:54 [Step-04][sub-197] Performing automated ECG artifact detection …
+11:32:39 [Step-04][sub-197] Detected 2 ECG-related ICs in 5605 ECG epochs.
+11:32:41 [Step-04][sub-197] Performing automated EOG artifact detection …
+11:32:46 [Step-04][sub-197] Detected 2 EOG-related ICs in 1185 EOG epochs.
+11:32:49 [Step-04][sub-197] Saving ICA solution and detected artifacts to disk.
+11:32:49 [Step-04][sub-197] Adding diagnostic plots for all ICs to the HTML report …
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 70/70 [02:05<00:00,  1.79s/it]
+11:35:02 [Step-04][sub-197] ICA completed. Please carefully review the extracted ICs in the report sub-197_task-tiwm_proc-ica+components_report.html, and mark all components you wish to reject as 'bad' in sub-197_task-tiwm_
+proc-ica_components.tsv
+11:35:05 [Step-03][sub-215, run-01] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-01_proc-filt_raw.fif and creating epochs
+11:35:05 [Step-04][sub-215, run-01] Creating EOG epochs …
+11:35:06 [Step-04][sub-215, run-01] Creating ECG epochs …
+11:35:08 [Step-04][sub-215, run-01] Applying high-pass filter with 1.0 Hz cutoff …
+11:35:10 [Step-03][sub-215, run-01] Creating task-related epochs …
+11:35:10 [Step-03][sub-215, run-02] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-02_proc-filt_raw.fif and creating epochs
+11:35:11 [Step-04][sub-215, run-02] Creating EOG epochs …
+11:35:11 [Step-04][sub-215, run-02] Creating ECG epochs …
+11:35:13 [Step-04][sub-215, run-02] Applying high-pass filter with 1.0 Hz cutoff …
+11:35:15 [Step-03][sub-215, run-02] Creating task-related epochs …
+11:35:15 [Step-03][sub-215, run-03] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-03_proc-filt_raw.fif and creating epochs
+11:35:16 [Step-04][sub-215, run-03] Creating EOG epochs …
+11:35:17 [Step-04][sub-215, run-03] Creating ECG epochs …
+11:35:18 [Step-04][sub-215, run-03] Applying high-pass filter with 1.0 Hz cutoff …
+11:35:20 [Step-03][sub-215, run-03] Creating task-related epochs …
+11:35:20 [Step-03][sub-215, run-04] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-04_proc-filt_raw.fif and creating epochs
+11:35:21 [Step-04][sub-215, run-04] Creating EOG epochs …
+11:35:22 [Step-04][sub-215, run-04] Creating ECG epochs …
+11:35:23 [Step-04][sub-215, run-04] Applying high-pass filter with 1.0 Hz cutoff …
+11:35:25 [Step-03][sub-215, run-04] Creating task-related epochs …
+11:35:25 [Step-03][sub-215, run-05] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-05_proc-filt_raw.fif and creating epochs
+11:35:26 [Step-04][sub-215, run-05] Creating EOG epochs …
+11:35:26 [Step-04][sub-215, run-05] Creating ECG epochs …
+11:35:28 [Step-04][sub-215, run-05] Applying high-pass filter with 1.0 Hz cutoff …
+11:35:31 [Step-03][sub-215, run-05] Creating task-related epochs …
+11:35:31 [Step-03][sub-215, run-06] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-06_proc-filt_raw.fif and creating epochs
+11:35:32 [Step-04][sub-215, run-06] Creating EOG epochs …
+11:35:32 [Step-04][sub-215, run-06] Creating ECG epochs …
+11:35:34 [Step-04][sub-215, run-06] Applying high-pass filter with 1.0 Hz cutoff …
+11:35:36 [Step-03][sub-215, run-06] Creating task-related epochs …
+11:35:36 [Step-03][sub-215, run-07] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-07_proc-filt_raw.fif and creating epochs
+11:35:37 [Step-04][sub-215, run-07] Creating EOG epochs …
+11:35:37 [Step-04][sub-215, run-07] Creating ECG epochs …
+11:35:39 [Step-04][sub-215, run-07] Applying high-pass filter with 1.0 Hz cutoff …
+11:35:41 [Step-03][sub-215, run-07] Creating task-related epochs …
+11:35:41 [Step-03][sub-215, run-08] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-08_proc-filt_raw.fif and creating epochs
+11:35:42 [Step-04][sub-215, run-08] Creating EOG epochs …
+11:35:42 [Step-04][sub-215, run-08] Creating ECG epochs …
+11:35:44 [Step-04][sub-215, run-08] Applying high-pass filter with 1.0 Hz cutoff …
+11:35:46 [Step-03][sub-215, run-08] Creating task-related epochs …
+11:35:52 [Step-04][sub-215] Calculating ICA solution.
+11:36:51 [Step-04][sub-215] Fit 69 components (explaining 99.9% of the variance) in 221 iterations.
+11:36:52 [Step-04][sub-215] Performing automated ECG artifact detection …
+11:38:46 [Step-04][sub-215] Detected 1 ECG-related ICs in 6227 ECG epochs.
+11:38:48 [Step-04][sub-215] Performing automated EOG artifact detection …
+11:38:50 [Step-04][sub-215] Detected 2 EOG-related ICs in 483 EOG epochs.
+11:38:52 [Step-04][sub-215] Saving ICA solution and detected artifacts to disk.
+11:38:52 [Step-04][sub-215] Adding diagnostic plots for all ICs to the HTML report …
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 69/69 [01:54<00:00,  1.66s/it]
+11:40:55 [Step-04][sub-215] ICA completed. Please carefully review the extracted ICs in the report sub-215_task-tiwm_proc-ica+components_report.html, and mark all components you wish to reject as 'bad' in sub-215_task-tiwm_
+proc-ica_components.tsv
+11:40:57 [Step-03][sub-231, run-01] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-231/meg/sub-231_task-tiwm_run-01_proc-filt_raw.fif and creating epochs
+11:40:58 [Step-04][sub-231, run-01] Creating EOG epochs …
+11:40:59 [Step-04][sub-231, run-01] Creating ECG epochs …
+11:41:00 [Step-04][sub-231, run-01] Applying high-pass filter with 1.0 Hz cutoff …
+11:41:02 [Step-03][sub-231, run-01] Creating task-related epochs …
+11:41:02 [Step-03][sub-231, run-02] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-231/meg/sub-231_task-tiwm_run-02_proc-filt_raw.fif and creating epochs
+11:41:03 [Step-04][sub-231, run-02] Creating EOG epochs …
+11:41:04 [Step-04][sub-231, run-02] Creating ECG epochs …
+11:41:06 [Step-04][sub-231, run-02] Applying high-pass filter with 1.0 Hz cutoff …
+11:41:08 [Step-03][sub-231, run-02] Creating task-related epochs …
+11:41:08 [Step-03][sub-231, run-03] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-231/meg/sub-231_task-tiwm_run-03_proc-filt_raw.fif and creating epochs
+11:41:09 [Step-04][sub-231, run-03] Creating EOG epochs …
+11:41:09 [Step-04][sub-231, run-03] Creating ECG epochs …
+11:41:11 [Step-04][sub-231, run-03] Applying high-pass filter with 1.0 Hz cutoff …
+11:41:13 [Step-03][sub-231, run-03] Creating task-related epochs …
+11:41:13 [Step-03][sub-231, run-04] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-231/meg/sub-231_task-tiwm_run-04_proc-filt_raw.fif and creating epochs
+11:41:14 [Step-04][sub-231, run-04] Creating EOG epochs …
+11:41:15 [Step-04][sub-231, run-04] Creating ECG epochs …
+11:41:17 [Step-04][sub-231, run-04] Applying high-pass filter with 1.0 Hz cutoff …
+11:41:19 [Step-03][sub-231, run-04] Creating task-related epochs …
+11:41:19 [Step-03][sub-231, run-05] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-231/meg/sub-231_task-tiwm_run-05_proc-filt_raw.fif and creating epochs
+11:41:20 [Step-04][sub-231, run-05] Creating EOG epochs …
+11:41:20 [Step-04][sub-231, run-05] Creating ECG epochs …
+11:41:22 [Step-04][sub-231, run-05] Applying high-pass filter with 1.0 Hz cutoff …
+11:41:24 [Step-03][sub-231, run-05] Creating task-related epochs …
+11:41:24 [Step-03][sub-231, run-06] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-231/meg/sub-231_task-tiwm_run-06_proc-filt_raw.fif and creating epochs
+11:41:25 [Step-04][sub-231, run-06] Creating EOG epochs …
+11:41:25 [Step-04][sub-231, run-06] Creating ECG epochs …
+11:41:27 [Step-04][sub-231, run-06] Applying high-pass filter with 1.0 Hz cutoff …
+11:41:29 [Step-03][sub-231, run-06] Creating task-related epochs …
+11:41:29 [Step-03][sub-231, run-07] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-231/meg/sub-231_task-tiwm_run-07_proc-filt_raw.fif and creating epochs
+11:41:30 [Step-04][sub-231, run-07] Creating EOG epochs …
+11:41:31 [Step-04][sub-231, run-07] Creating ECG epochs …
+11:41:32 [Step-04][sub-231, run-07] Applying high-pass filter with 1.0 Hz cutoff …
+11:41:34 [Step-03][sub-231, run-07] Creating task-related epochs …
+11:41:35 [Step-03][sub-231, run-08] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-231/meg/sub-231_task-tiwm_run-08_proc-filt_raw.fif and creating epochs
+11:41:35 [Step-04][sub-231, run-08] Creating EOG epochs …
+11:41:36 [Step-04][sub-231, run-08] Creating ECG epochs …
+11:41:38 [Step-04][sub-231, run-08] Applying high-pass filter with 1.0 Hz cutoff …
+11:41:40 [Step-03][sub-231, run-08] Creating task-related epochs …
+11:41:46 [Step-04][sub-231] Calculating ICA solution.
+11:43:52 [Step-04][sub-231] Fit 47 components (explaining 99.9% of the variance) in 677 iterations.
+11:43:53 [Step-04][sub-231] Performing automated ECG artifact detection …
+11:44:52 [Step-04][sub-231] Detected 5 ECG-related ICs in 5005 ECG epochs.
+11:44:55 [Step-04][sub-231] Performing automated EOG artifact detection …
+11:45:02 [Step-04][sub-231] No EOG-related ICs detected, this is highly suspicious. A manual check is suggested. You may wish to lower "ica_eog_threshold".
+11:45:04 [Step-04][sub-231] Saving ICA solution and detected artifacts to disk.
+11:45:05 [Step-04][sub-231] Adding diagnostic plots for all ICs to the HTML report …
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 47/47 [01:15<00:00,  1.61s/it]
+11:46:22 [Step-04][sub-231] ICA completed. Please carefully review the extracted ICs in the report sub-231_task-tiwm_proc-ica+components_report.html, and mark all components you wish to reject as 'bad' in sub-231_task-tiwm_
+proc-ica_components.tsv
+11:46:24 [Step-03][sub-486, run-01] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-486/meg/sub-486_task-tiwm_run-01_proc-filt_raw.fif and creating epochs
+11:46:25 [Step-04][sub-486, run-01] Creating EOG epochs …
+11:46:25 [Step-04][sub-486, run-01] Creating ECG epochs …
+11:46:27 [Step-04][sub-486, run-01] Applying high-pass filter with 1.0 Hz cutoff …
+11:46:30 [Step-03][sub-486, run-01] Creating task-related epochs …
+11:46:30 [Step-03][sub-486, run-02] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-486/meg/sub-486_task-tiwm_run-02_proc-filt_raw.fif and creating epochs
+11:46:30 [Step-04][sub-486, run-02] Creating EOG epochs …
+11:46:31 [Step-04][sub-486, run-02] Creating ECG epochs …
+11:46:33 [Step-04][sub-486, run-02] Applying high-pass filter with 1.0 Hz cutoff …
+11:46:35 [Step-03][sub-486, run-02] Creating task-related epochs …
+11:46:35 [Step-03][sub-486, run-03] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-486/meg/sub-486_task-tiwm_run-03_proc-filt_raw.fif and creating epochs
+11:46:36 [Step-04][sub-486, run-03] Creating EOG epochs …
+11:46:36 [Step-04][sub-486, run-03] Creating ECG epochs …
+11:46:38 [Step-04][sub-486, run-03] Applying high-pass filter with 1.0 Hz cutoff …
+11:46:40 [Step-03][sub-486, run-03] Creating task-related epochs …
+11:46:40 [Step-03][sub-486, run-04] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-486/meg/sub-486_task-tiwm_run-04_proc-filt_raw.fif and creating epochs
+11:46:41 [Step-04][sub-486, run-04] Creating EOG epochs …
+11:46:41 [Step-04][sub-486, run-04] Creating ECG epochs …
+11:46:43 [Step-04][sub-486, run-04] Applying high-pass filter with 1.0 Hz cutoff …
+11:46:45 [Step-03][sub-486, run-04] Creating task-related epochs …
+11:46:45 [Step-03][sub-486, run-05] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-486/meg/sub-486_task-tiwm_run-05_proc-filt_raw.fif and creating epochs
+11:46:46 [Step-04][sub-486, run-05] Creating EOG epochs …
+11:46:46 [Step-04][sub-486, run-05] Creating ECG epochs …
+11:46:48 [Step-04][sub-486, run-05] Applying high-pass filter with 1.0 Hz cutoff …
+11:46:50 [Step-03][sub-486, run-05] Creating task-related epochs …
+11:46:50 [Step-03][sub-486, run-06] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-486/meg/sub-486_task-tiwm_run-06_proc-filt_raw.fif and creating epochs
+11:46:51 [Step-04][sub-486, run-06] Creating EOG epochs …
+11:46:51 [Step-04][sub-486, run-06] Creating ECG epochs …
+11:46:53 [Step-04][sub-486, run-06] Applying high-pass filter with 1.0 Hz cutoff …
+11:46:55 [Step-03][sub-486, run-06] Creating task-related epochs …
+11:46:55 [Step-03][sub-486, run-07] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-486/meg/sub-486_task-tiwm_run-07_proc-filt_raw.fif and creating epochs
+11:46:56 [Step-04][sub-486, run-07] Creating EOG epochs …
+11:46:56 [Step-04][sub-486, run-07] Creating ECG epochs …
+11:46:58 [Step-04][sub-486, run-07] Applying high-pass filter with 1.0 Hz cutoff …
+11:47:00 [Step-03][sub-486, run-07] Creating task-related epochs …
+11:47:00 [Step-03][sub-486, run-08] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-486/meg/sub-486_task-tiwm_run-08_proc-filt_raw.fif and creating epochs
+11:47:01 [Step-04][sub-486, run-08] Creating EOG epochs …
+11:47:01 [Step-04][sub-486, run-08] Creating ECG epochs …
+11:47:03 [Step-04][sub-486, run-08] Applying high-pass filter with 1.0 Hz cutoff …
+11:47:05 [Step-03][sub-486, run-08] Creating task-related epochs …
+11:47:10 [Step-04][sub-486] Calculating ICA solution.
+11:47:31 [Step-04][sub-486] Fit 31 components (explaining 99.9% of the variance) in 118 iterations.
+11:47:32 [Step-04][sub-486] Performing automated ECG artifact detection …
+11:48:31 [Step-04][sub-486] Detected 2 ECG-related ICs in 5657 ECG epochs.
+11:48:33 [Step-04][sub-486] Performing automated EOG artifact detection …
+11:48:38 [Step-04][sub-486] Detected 1 EOG-related ICs in 1649 EOG epochs.
+11:48:40 [Step-04][sub-486] Saving ICA solution and detected artifacts to disk.
+11:48:40 [Step-04][sub-486] Adding diagnostic plots for all ICs to the HTML report …
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31/31 [00:49<00:00,  1.60s/it]
+11:49:31 [Step-04][sub-486] ICA completed. Please carefully review the extracted ICs in the report sub-486_task-tiwm_proc-ica+components_report.html, and mark all components you wish to reject as 'bad' in sub-486_task-tiwm_
+proc-ica_components.tsv
+11:49:33 [Step-03][sub-788, run-01] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-788/meg/sub-788_task-tiwm_run-01_proc-filt_raw.fif and creating epochs
+11:49:34 [Step-04][sub-788, run-01] Creating EOG epochs …
+11:49:35 [Step-04][sub-788, run-01] Creating ECG epochs …
+11:49:36 [Step-04][sub-788, run-01] Applying high-pass filter with 1.0 Hz cutoff …
+11:49:39 [Step-03][sub-788, run-01] Creating task-related epochs …
+11:49:39 [Step-03][sub-788, run-02] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-788/meg/sub-788_task-tiwm_run-02_proc-filt_raw.fif and creating epochs
+11:49:40 [Step-04][sub-788, run-02] Creating EOG epochs …
+11:49:40 [Step-04][sub-788, run-02] Creating ECG epochs …
+11:49:42 [Step-04][sub-788, run-02] Applying high-pass filter with 1.0 Hz cutoff …
+11:49:44 [Step-03][sub-788, run-02] Creating task-related epochs …
+11:49:44 [Step-03][sub-788, run-03] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-788/meg/sub-788_task-tiwm_run-03_proc-filt_raw.fif and creating epochs
+11:49:45 [Step-04][sub-788, run-03] Creating EOG epochs …
+11:49:45 [Step-04][sub-788, run-03] Creating ECG epochs …
+11:49:47 [Step-04][sub-788, run-03] Applying high-pass filter with 1.0 Hz cutoff …
+11:49:49 [Step-03][sub-788, run-03] Creating task-related epochs …
+11:49:49 [Step-03][sub-788, run-04] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-788/meg/sub-788_task-tiwm_run-04_proc-filt_raw.fif and creating epochs
+11:49:50 [Step-04][sub-788, run-04] Creating EOG epochs …
+11:49:50 [Step-04][sub-788, run-04] Creating ECG epochs …
+11:49:52 [Step-04][sub-788, run-04] Applying high-pass filter with 1.0 Hz cutoff …
+11:49:54 [Step-03][sub-788, run-04] Creating task-related epochs …
+11:49:54 [Step-03][sub-788, run-05] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-788/meg/sub-788_task-tiwm_run-05_proc-filt_raw.fif and creating epochs
+11:49:55 [Step-04][sub-788, run-05] Creating EOG epochs …
+11:49:55 [Step-04][sub-788, run-05] Creating ECG epochs …
+11:49:57 [Step-04][sub-788, run-05] Applying high-pass filter with 1.0 Hz cutoff …
+11:49:59 [Step-03][sub-788, run-05] Creating task-related epochs …
+11:49:59 [Step-03][sub-788, run-06] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-788/meg/sub-788_task-tiwm_run-06_proc-filt_raw.fif and creating epochs
+11:50:00 [Step-04][sub-788, run-06] Creating EOG epochs …
+11:50:00 [Step-04][sub-788, run-06] Creating ECG epochs …
+11:50:02 [Step-04][sub-788, run-06] Applying high-pass filter with 1.0 Hz cutoff …
+11:50:04 [Step-03][sub-788, run-06] Creating task-related epochs …
+11:50:04 [Step-03][sub-788, run-07] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-788/meg/sub-788_task-tiwm_run-07_proc-filt_raw.fif and creating epochs
+11:50:05 [Step-04][sub-788, run-07] Creating EOG epochs …
+11:50:05 [Step-04][sub-788, run-07] Creating ECG epochs …
+11:50:07 [Step-04][sub-788, run-07] Applying high-pass filter with 1.0 Hz cutoff …
+11:50:09 [Step-03][sub-788, run-07] Creating task-related epochs …
+11:50:09 [Step-03][sub-788, run-08] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-788/meg/sub-788_task-tiwm_run-08_proc-filt_raw.fif and creating epochs
+11:50:10 [Step-04][sub-788, run-08] Creating EOG epochs …
+11:50:10 [Step-04][sub-788, run-08] Creating ECG epochs …
+11:50:12 [Step-04][sub-788, run-08] Applying high-pass filter with 1.0 Hz cutoff …
+11:50:14 [Step-03][sub-788, run-08] Creating task-related epochs …
+11:50:19 [Step-04][sub-788] Calculating ICA solution.
+11:51:06 [Step-04][sub-788] Fit 70 components (explaining 99.9% of the variance) in 178 iterations.
+11:51:06 [Step-04][sub-788] Performing automated ECG artifact detection …
+11:51:39 [Step-04][sub-788] Detected 2 ECG-related ICs in 4557 ECG epochs.
+11:51:42 [Step-04][sub-788] Performing automated EOG artifact detection …
+11:51:45 [Step-04][sub-788] Detected 1 EOG-related ICs in 637 EOG epochs.
+11:51:47 [Step-04][sub-788] Saving ICA solution and detected artifacts to disk.
+11:51:47 [Step-04][sub-788] Adding diagnostic plots for all ICs to the HTML report …
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 70/70 [01:59<00:00,  1.70s/it]
+11:53:54 [Step-04][sub-788] ICA completed. Please carefully review the extracted ICs in the report sub-788_task-tiwm_proc-ica+components_report.html, and mark all components you wish to reject as 'bad' in sub-788_task-tiwm_
+proc-ica_components.tsv
+11:53:57 [Step-03][sub-840, run-01] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-840/meg/sub-840_task-tiwm_run-01_proc-filt_raw.fif and creating epochs
+11:53:58 [Step-04][sub-840, run-01] Creating EOG epochs …
+11:53:58 [Step-04][sub-840, run-01] Creating ECG epochs …
+11:54:00 [Step-04][sub-840, run-01] Applying high-pass filter with 1.0 Hz cutoff …
+11:54:02 [Step-03][sub-840, run-01] Creating task-related epochs …
+11:54:02 [Step-03][sub-840, run-02] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-840/meg/sub-840_task-tiwm_run-02_proc-filt_raw.fif and creating epochs
+11:54:03 [Step-04][sub-840, run-02] Creating EOG epochs …
+11:54:03 [Step-04][sub-840, run-02] Creating ECG epochs …
+11:54:05 [Step-04][sub-840, run-02] Applying high-pass filter with 1.0 Hz cutoff …
+11:54:08 [Step-03][sub-840, run-02] Creating task-related epochs …
+11:54:08 [Step-03][sub-840, run-03] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-840/meg/sub-840_task-tiwm_run-03_proc-filt_raw.fif and creating epochs
+11:54:08 [Step-04][sub-840, run-03] Creating EOG epochs …
+11:54:09 [Step-04][sub-840, run-03] Creating ECG epochs …
+11:54:10 [Step-04][sub-840, run-03] Applying high-pass filter with 1.0 Hz cutoff …
+11:54:13 [Step-03][sub-840, run-03] Creating task-related epochs …
+11:54:13 [Step-03][sub-840, run-04] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-840/meg/sub-840_task-tiwm_run-04_proc-filt_raw.fif and creating epochs
+11:54:13 [Step-04][sub-840, run-04] Creating EOG epochs …
+11:54:14 [Step-04][sub-840, run-04] Creating ECG epochs …
+11:54:15 [Step-04][sub-840, run-04] Applying high-pass filter with 1.0 Hz cutoff …
+11:54:18 [Step-03][sub-840, run-04] Creating task-related epochs …
+11:54:18 [Step-03][sub-840, run-05] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-840/meg/sub-840_task-tiwm_run-05_proc-filt_raw.fif and creating epochs
+11:54:18 [Step-04][sub-840, run-05] Creating EOG epochs …
+11:54:19 [Step-04][sub-840, run-05] Creating ECG epochs …
+11:54:20 [Step-04][sub-840, run-05] Applying high-pass filter with 1.0 Hz cutoff …
+11:54:22 [Step-03][sub-840, run-05] Creating task-related epochs …
+11:54:22 [Step-03][sub-840, run-06] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-840/meg/sub-840_task-tiwm_run-06_proc-filt_raw.fif and creating epochs
+11:54:23 [Step-04][sub-840, run-06] Creating EOG epochs …
+11:54:23 [Step-04][sub-840, run-06] Creating ECG epochs …
+11:54:25 [Step-04][sub-840, run-06] Applying high-pass filter with 1.0 Hz cutoff …
+11:54:27 [Step-03][sub-840, run-06] Creating task-related epochs …
+11:54:27 [Step-03][sub-840, run-07] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-840/meg/sub-840_task-tiwm_run-07_proc-filt_raw.fif and creating epochs
+11:54:28 [Step-04][sub-840, run-07] Creating EOG epochs …
+11:54:28 [Step-04][sub-840, run-07] Creating ECG epochs …
+11:54:29 [Step-04][sub-840, run-07] Applying high-pass filter with 1.0 Hz cutoff …
+11:54:31 [Step-03][sub-840, run-07] Creating task-related epochs …
+11:54:32 [Step-03][sub-840, run-08] Loading filtered raw data from /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-840/meg/sub-840_task-tiwm_run-08_proc-filt_raw.fif and creating epochs
+11:54:32 [Step-04][sub-840, run-08] Creating EOG epochs …
+11:54:32 [Step-04][sub-840, run-08] Creating ECG epochs …
+11:54:34 [Step-04][sub-840, run-08] Applying high-pass filter with 1.0 Hz cutoff …
+11:54:37 [Step-03][sub-840, run-08] Creating task-related epochs …
+11:54:41 [Step-04][sub-840] Calculating ICA solution.
+11:57:33 [Step-04][sub-840] Fit 74 components (explaining 99.9% of the variance) in 479 iterations.
+11:57:34 [Step-04][sub-840] Performing automated ECG artifact detection …
+11:58:10 [Step-04][sub-840] Detected 2 ECG-related ICs in 4723 ECG epochs.
+11:58:12 [Step-04][sub-840] Performing automated EOG artifact detection …
+11:58:13 [Step-04][sub-840] Detected 3 EOG-related ICs in 142 EOG epochs.
+11:58:16 [Step-04][sub-840] Saving ICA solution and detected artifacts to disk.
+11:58:16 [Step-04][sub-840] Adding diagnostic plots for all ICs to the HTML report …
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 74/74 [02:12<00:00,  1.78s/it]
+12:00:36 [Step-04][sub-840] ICA completed. Please carefully review the extracted ICs in the report sub-840_task-tiwm_proc-ica+components_report.html, and mark all components you wish to reject as 'bad' in sub-840_task-tiwm_
+proc-ica_components.tsv
+12:00:36 [Step-04] Completed Step 4: Compute ICA
+2021-06-10 12:00:36 INFO Successfully finished running: -run_ica
+2021-06-10 12:00:36 INFO Now running: -run_ssp
+2021-06-10 12:00:36 INFO Successfully finished running: -run_ssp
+2021-06-10 12:00:36 INFO Now running: -apply_ica
+12:00:36 [Step-05] Running Step 5: Apply ICA
+12:00:38 [Step-05][sub-197] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-tiwm_epo.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/m
+eg/sub-197_task-tiwm_proc-ica_epo.fif
+12:00:41 [Step-05][sub-197] Rejecting ICs: [1, 4, 6, 65]
+12:00:43 [Step-05][sub-197] Saving reconstructed epochs after ICA.
+Overwriting existing file.
+12:00:48 [Step-05][sub-215] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-215/meg/sub-215_task-tiwm_epo.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-215/m
+eg/sub-215_task-tiwm_proc-ica_epo.fif
+12:00:51 [Step-05][sub-215] Rejecting ICs: [7, 14, 54]
+12:00:53 [Step-05][sub-215] Saving reconstructed epochs after ICA.
+Overwriting existing file.
+12:01:02 [Step-05][sub-231] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-231/meg/sub-231_task-tiwm_epo.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-231/m
+eg/sub-231_task-tiwm_proc-ica_epo.fif
+12:01:05 [Step-05][sub-231] Rejecting ICs: [2, 10, 16, 24, 32]
+12:01:06 [Step-05][sub-231] Saving reconstructed epochs after ICA.
+Overwriting existing file.
+12:01:11 [Step-05][sub-486] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-486/meg/sub-486_task-tiwm_epo.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-486/m
+eg/sub-486_task-tiwm_proc-ica_epo.fif
+12:01:13 [Step-05][sub-486] Rejecting ICs: [3, 11, 15]
+12:01:15 [Step-05][sub-486] Saving reconstructed epochs after ICA.
+Overwriting existing file.
+12:01:18 [Step-05][sub-788] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-788/meg/sub-788_task-tiwm_epo.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-788/m
+eg/sub-788_task-tiwm_proc-ica_epo.fif
+12:01:22 [Step-05][sub-788] Rejecting ICs: [23, 30, 52]
+12:01:24 [Step-05][sub-788] Saving reconstructed epochs after ICA.
+Overwriting existing file.
+12:01:27 [Step-05][sub-840] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-840/meg/sub-840_task-tiwm_epo.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-840/m
+eg/sub-840_task-tiwm_proc-ica_epo.fif
+12:01:31 [Step-05][sub-840] Rejecting ICs: [2, 8, 28]
+12:01:33 [Step-05][sub-840] Saving reconstructed epochs after ICA.
+Overwriting existing file.
+12:01:39 [Step-05] Completed Step 5: Apply ICA
+2021-06-10 12:01:39 INFO Successfully finished running: -apply_ica
+2021-06-10 12:01:39 INFO Now running: -apply_ssp
+2021-06-10 12:01:39 INFO Successfully finished running: -apply_ssp
+2021-06-10 12:01:39 INFO Now running: ptp_reject
+12:01:39 [Step-06] Running Step 6: Reject epochs based on peak-to-peak amplitude
+12:01:39 [Step-06][sub-197] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-tiwm_proc-ica_epo.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/
+sub-197/meg/sub-197_task-tiwm_proc-clean_epo.fif
+12:01:41 [Step-06][sub-197] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-tiwm_proc-ica_epo.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/
+sub-197/meg/sub-197_task-tiwm_proc-clean_epo.fif
+Overwriting existing file.
+12:01:47 [Step-06][sub-215] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-215/meg/sub-215_task-tiwm_proc-ica_epo.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/
+sub-215/meg/sub-215_task-tiwm_proc-clean_epo.fif
+12:01:49 [Step-06][sub-215] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-215/meg/sub-215_task-tiwm_proc-ica_epo.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/
+sub-215/meg/sub-215_task-tiwm_proc-clean_epo.fif
+Overwriting existing file.
+12:01:51 [Step-06][sub-231] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-231/meg/sub-231_task-tiwm_proc-ica_epo.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/
+sub-231/meg/sub-231_task-tiwm_proc-clean_epo.fif
+12:01:52 [Step-06][sub-231] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-231/meg/sub-231_task-tiwm_proc-ica_epo.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/
+sub-231/meg/sub-231_task-tiwm_proc-clean_epo.fif
+Overwriting existing file.
+12:01:59 [Step-06][sub-486] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-486/meg/sub-486_task-tiwm_proc-ica_epo.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/
+sub-486/meg/sub-486_task-tiwm_proc-clean_epo.fif
+12:02:01 [Step-06][sub-486] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-486/meg/sub-486_task-tiwm_proc-ica_epo.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/
+sub-486/meg/sub-486_task-tiwm_proc-clean_epo.fif
+Overwriting existing file.
+12:02:02 [Step-06][sub-788] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-788/meg/sub-788_task-tiwm_proc-ica_epo.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/
+sub-788/meg/sub-788_task-tiwm_proc-clean_epo.fif
+12:02:04 [Step-06][sub-788] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-788/meg/sub-788_task-tiwm_proc-ica_epo.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/
+sub-788/meg/sub-788_task-tiwm_proc-clean_epo.fif
+Overwriting existing file.
+12:02:06 [Step-06][sub-840] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-840/meg/sub-840_task-tiwm_proc-ica_epo.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/
+sub-840/meg/sub-840_task-tiwm_proc-clean_epo.fif
+12:02:08 [Step-06][sub-840] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-840/meg/sub-840_task-tiwm_proc-ica_epo.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/
+sub-840/meg/sub-840_task-tiwm_proc-clean_epo.fif
+Overwriting existing file.
+12:02:11 [Step-06] Completed Step 6: Reject epochs based on peak-to-peak amplitude
+2021-06-10 12:02:11 INFO Successfully finished running: ptp_reject
+2021-06-10 12:02:11 INFO Now running: make_evoked
+12:02:11 [Step-06] Running Step 6: Create evoked data
+12:02:11 [Step-06][sub-197] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-tiwm_proc-clean_epo.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipelin
+e/sub-197/meg/sub-197_task-tiwm_ave.fif
+12:02:13 [Step-06][sub-197] Creating evoked data based on experimental conditions …
+12:02:13 [Step-06][sub-197] Contrasting evoked responses …
+12:02:13  A critical error occurred.
+Traceback (most recent call last):
+  File "/storage/store/work/csegerie/parietal/mne-bids-pipeline/run.py", line 200, in <module>
+    fire.Fire(process)
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/site-packages/fire/core.py", line 141, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/site-packages/fire/core.py", line 466, in _Fire
+    component, remaining_args = _CallAndUpdateTrace(
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/site-packages/fire/core.py", line 681, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+  File "/storage/store/work/csegerie/parietal/mne-bids-pipeline/run.py", line 195, in process
+    _run_script(script_path, config, root_dir, subject, session, task, run)
+  File "/storage/store/work/csegerie/parietal/mne-bids-pipeline/run.py", line 101, in _run_script
+    runpy.run_path(script_path, run_name='__main__')
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/runpy.py", line 268, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/runpy.py", line 97, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/storage/store/work/csegerie/parietal/mne-bids-pipeline/scripts/sensor/01-make_evoked.py", line 106, in <module>
+    main()
+  File "/storage/store/work/csegerie/parietal/mne-bids-pipeline/scripts/sensor/01-make_evoked.py", line 98, in main
+    parallel(run_func(subject, session) for subject, session in
+  File "/storage/store/work/csegerie/parietal/mne-bids-pipeline/scripts/sensor/01-make_evoked.py", line 98, in <genexpr>
+    parallel(run_func(subject, session) for subject, session in
+  File "/storage/store/work/csegerie/parietal/mne-bids-pipeline/config.py", line 1775, in wrapper
+    raise(e)
+  File "/storage/store/work/csegerie/parietal/mne-bids-pipeline/config.py", line 1768, in wrapper
+    return func(*args, **kwargs)
+  File "/storage/store/work/csegerie/parietal/mne-bids-pipeline/scripts/sensor/01-make_evoked.py", line 71, in run_evoked
+    evoked_diff = mne.combine_evoked([all_evoked[cond_1],
+KeyError: '1_item'
+(mne_dev) csegerie@drago4:/storage/store/work/csegerie/parietal/mne-bids-pipeline$ nice -n 5 python run.py --config=/storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/config.py --steps=preprocessing,sensor,re
+port
+2021-06-10 14:19:03 INFO Now running: init_derivatives_dir
+14:19:05 Using custom configuration: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/config.py
+14:19:06 [Step-01] Running: Initializing output directories.
+14:19:06 [Step-01] Initializing output directories.
+14:19:08 Using custom configuration: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/config.py
+14:19:08 Using custom configuration: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/config.py
+14:19:08 Using custom configuration: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/config.py
+14:19:08 Using custom configuration: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/config.py
+14:19:08 Using custom configuration: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/config.py
+14:19:09 [Step-01] Completed: Initializing output directories.
+2021-06-10 14:19:09 INFO Successfully finished running: init_derivatives_dir
+2021-06-10 14:19:09 INFO Now running: import_and_maxfilter
+14:19:10 [Step-01] Running Step 1: Data import
+14:19:10 [Step-01][sub-215] Loading reference run: 01.
+14:19:11 [Step-01][sub-788] Loading reference run: 01.
+14:19:11 [Step-01][sub-197] Loading reference run: 01.
+14:19:11 [Step-01][sub-231] Loading reference run: 01.
+14:19:11 [Step-01][sub-486] Loading reference run: 01.
+14:19:14 [Step-01][sub-215, run-01] Applying Maxwell filter to experimental data.
+14:19:14 [Step-01][sub-215, run-01]
+Found no bad channels.
+
+14:19:15 [Step-01][sub-231, run-01] Applying Maxwell filter to experimental data.
+14:19:15 [Step-01][sub-231, run-01]
+Found no bad channels.
+
+14:19:15 [Step-01][sub-197, run-01] Applying Maxwell filter to experimental data.
+14:19:16 [Step-01][sub-788, run-01] Applying Maxwell filter to experimental data.
+14:19:17 [Step-01][sub-486, run-01] Applying Maxwell filter to experimental data.
+14:19:27 [Step-01][sub-215] Processing empty-room recording …
+14:19:29 [Step-01][sub-788] Processing empty-room recording …
+14:19:29 [Step-01][sub-486] Processing empty-room recording …
+14:19:30 [Step-01][sub-197] Processing empty-room recording …
+14:19:30 [Step-01][sub-231] Processing empty-room recording …
+14:19:31 [Step-01][sub-788] Applying Maxwell filter to empty-room recording
+14:19:31 [Step-01][sub-231] Applying Maxwell filter to empty-room recording
+14:19:31 [Step-01][sub-197] Applying Maxwell filter to empty-room recording
+14:19:31 [Step-01][sub-215] Applying Maxwell filter to empty-room recording
+14:19:31 [Step-01][sub-486] Applying Maxwell filter to empty-room recording
+14:19:36 [Step-01][sub-197, run-02] Applying Maxwell filter to experimental data.
+14:19:38 [Step-01][sub-788, run-02] Applying Maxwell filter to experimental data.
+14:19:39 [Step-01][sub-231, run-02] Applying Maxwell filter to experimental data.
+14:19:39 [Step-01][sub-231, run-02]
+Found no bad channels.
+
+14:19:39 [Step-01][sub-486, run-02] Applying Maxwell filter to experimental data.
+14:19:43 [Step-01][sub-215, run-02] Applying Maxwell filter to experimental data.
+14:19:43 [Step-01][sub-215, run-02]
+Found no bad channels.
+
+14:20:00 [Step-01][sub-197, run-03] Applying Maxwell filter to experimental data.
+14:20:00 [Step-01][sub-486, run-03] Applying Maxwell filter to experimental data.
+14:20:00 [Step-01][sub-231, run-03] Applying Maxwell filter to experimental data.
+14:20:00 [Step-01][sub-231, run-03]
+Found no bad channels.
+
+14:20:01 [Step-01][sub-788, run-03] Applying Maxwell filter to experimental data.
+14:20:05 [Step-01][sub-215, run-03] Applying Maxwell filter to experimental data.
+14:20:05 [Step-01][sub-215, run-03]
+Found no bad channels.
+
+14:20:16 [Step-01][sub-197, run-04] Applying Maxwell filter to experimental data.
+14:20:18 [Step-01][sub-486, run-04] Applying Maxwell filter to experimental data.
+14:20:18 [Step-01][sub-231, run-04] Applying Maxwell filter to experimental data.
+14:20:18 [Step-01][sub-231, run-04]
+Found no bad channels.
+
+14:20:20 [Step-01][sub-215, run-04] Applying Maxwell filter to experimental data.
+14:20:20 [Step-01][sub-215, run-04]
+Found no bad channels.
+
+14:20:23 [Step-01][sub-788, run-04] Applying Maxwell filter to experimental data.
+14:20:31 [Step-01][sub-197, run-05] Applying Maxwell filter to experimental data.
+14:20:37 [Step-01][sub-486, run-05] Applying Maxwell filter to experimental data.
+14:20:40 [Step-01][sub-215, run-05] Applying Maxwell filter to experimental data.
+14:20:40 [Step-01][sub-215, run-05]
+Found no bad channels.
+
+14:20:42 [Step-01][sub-231, run-05] Applying Maxwell filter to experimental data.
+14:20:42 [Step-01][sub-231, run-05]
+Found no bad channels.
+
+14:20:48 [Step-01][sub-788, run-05] Applying Maxwell filter to experimental data.
+14:20:55 [Step-01][sub-486, run-06] Applying Maxwell filter to experimental data.
+14:20:58 [Step-01][sub-197, run-06] Applying Maxwell filter to experimental data.
+14:20:59 [Step-01][sub-215, run-06] Applying Maxwell filter to experimental data.
+14:20:59 [Step-01][sub-215, run-06]
+Found no bad channels.
+
+14:21:03 [Step-01][sub-231, run-06] Applying Maxwell filter to experimental data.
+14:21:03 [Step-01][sub-231, run-06]
+Found no bad channels.
+
+14:21:11 [Step-01][sub-486, run-07] Applying Maxwell filter to experimental data.
+14:21:12 [Step-01][sub-197, run-07] Applying Maxwell filter to experimental data.
+14:21:18 [Step-01][sub-215, run-07] Applying Maxwell filter to experimental data.
+14:21:18 [Step-01][sub-215, run-07]
+Found no bad channels.
+
+14:21:21 [Step-01][sub-231, run-07] Applying Maxwell filter to experimental data.
+14:21:21 [Step-01][sub-231, run-07]
+Found no bad channels.
+
+14:21:22 [Step-01][sub-788, run-06] Applying Maxwell filter to experimental data.
+14:21:29 [Step-01][sub-197, run-08] Applying Maxwell filter to experimental data.
+14:21:36 [Step-01][sub-215, run-08] Applying Maxwell filter to experimental data.
+14:21:36 [Step-01][sub-215, run-08]
+Found no bad channels.
+
+14:21:40 [Step-01][sub-486, run-08] Applying Maxwell filter to experimental data.
+14:21:43 [Step-01][sub-840] Loading reference run: 01.
+14:21:53 [Step-01][sub-840, run-01] Applying Maxwell filter to experimental data.
+14:21:54 [Step-01][sub-231, run-08] Applying Maxwell filter to experimental data.
+14:21:54 [Step-01][sub-231, run-08]
+Found no bad channels.
+
+14:21:55 [Step-01][sub-788, run-07] Applying Maxwell filter to experimental data.
+14:22:05 [Step-01][sub-840] Processing empty-room recording …
+14:22:06 [Step-01][sub-840] Applying Maxwell filter to empty-room recording
+14:22:08 [Step-01][sub-788, run-08] Applying Maxwell filter to experimental data.
+14:22:09 [Step-01][sub-840, run-02] Applying Maxwell filter to experimental data.
+14:22:23 [Step-01][sub-840, run-03] Applying Maxwell filter to experimental data.
+14:22:33 [Step-01][sub-840, run-04] Applying Maxwell filter to experimental data.
+14:22:43 [Step-01][sub-840, run-05] Applying Maxwell filter to experimental data.
+14:22:54 [Step-01][sub-840, run-06] Applying Maxwell filter to experimental data.
+14:23:04 [Step-01][sub-840, run-07] Applying Maxwell filter to experimental data.
+14:23:13 [Step-01][sub-840, run-08] Applying Maxwell filter to experimental data.
+14:23:20 [Step-01] Completed Step 1: Data import
+2021-06-10 14:23:20 INFO Successfully finished running: import_and_maxfilter
+2021-06-10 14:23:20 INFO Now running: frequency_filter
+14:23:20 [Step-02] Running Step 2: Frequency filtering
+14:23:26 [Step-02][sub-197, run-03] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-03_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-03_proc-filt_raw.fif
+14:23:26 [Step-02][sub-197, run-02] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-02_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-02_proc-filt_raw.fif
+14:23:26 [Step-02][sub-197, run-01] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-01_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-01_proc-filt_raw.fif
+14:23:27 [Step-02][sub-197, run-05] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-05_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-05_proc-filt_raw.fif
+14:23:27 [Step-02][sub-197, run-04] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-04_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-04_proc-filt_raw.fif
+14:23:28 [Step-02][sub-197, run-03] Band-pass filtering data; range: 1.0 – 150.0 Hz
+14:23:28 [Step-02][sub-197, run-04] Band-pass filtering data; range: 1.0 – 150.0 Hz
+14:23:31 [Step-02][sub-197, run-05] Band-pass filtering data; range: 1.0 – 150.0 Hz
+14:23:33 [Step-02][sub-197, run-03] Filtering empty-room data between 1.0 and 150.0 Hz
+14:23:34 [Step-02][sub-197, run-01] Band-pass filtering data; range: 1.0 – 150.0 Hz
+14:23:34 [Step-02][sub-197, run-04] Filtering empty-room data between 1.0 and 150.0 Hz
+14:23:34 [Step-02][sub-197, run-02] Band-pass filtering data; range: 1.0 – 150.0 Hz
+14:23:35 [Step-02][sub-197, run-04] Resampling experimental data to 500.0 Hz
+14:23:35 [Step-02][sub-197, run-03] Resampling experimental data to 500.0 Hz
+14:23:37 [Step-02][sub-197, run-05] Filtering empty-room data between 1.0 and 150.0 Hz
+14:23:38 [Step-02][sub-197, run-05] Resampling experimental data to 500.0 Hz
+14:23:40 [Step-02][sub-197, run-01] Filtering empty-room data between 1.0 and 150.0 Hz
+14:23:41 [Step-02][sub-197, run-01] Resampling experimental data to 500.0 Hz
+14:23:41 [Step-02][sub-197, run-02] Filtering empty-room data between 1.0 and 150.0 Hz
+14:23:42 [Step-02][sub-197, run-02] Resampling experimental data to 500.0 Hz
+14:23:46 [Step-02][sub-197, run-04] Resampling empty-room recording.
+14:23:47 [Step-02][sub-197, run-03] Resampling empty-room recording.
+14:23:50 [Step-02][sub-197, run-06] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-06_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-06_proc-filt_raw.fif
+14:23:50 [Step-02][sub-197, run-05] Resampling empty-room recording.
+14:23:51 [Step-02][sub-197, run-01] Resampling empty-room recording.
+14:23:52 [Step-02][sub-197, run-07] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-07_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-07_proc-filt_raw.fif
+14:23:53 [Step-02][sub-197, run-06] Band-pass filtering data; range: 1.0 – 150.0 Hz
+14:23:54 [Step-02][sub-197, run-02] Resampling empty-room recording.
+14:23:55 [Step-02][sub-197, run-07] Band-pass filtering data; range: 1.0 – 150.0 Hz
+14:23:58 [Step-02][sub-197, run-06] Filtering empty-room data between 1.0 and 150.0 Hz
+14:23:59 [Step-02][sub-197, run-06] Resampling experimental data to 500.0 Hz
+14:23:59 [Step-02][sub-197, run-08] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-08_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-08_proc-filt_raw.fif
+14:24:00 [Step-02][sub-215, run-01] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-01_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-01_proc-filt_raw.fif
+14:24:00 [Step-02][sub-197, run-07] Filtering empty-room data between 1.0 and 150.0 Hz
+14:24:01 [Step-02][sub-197, run-07] Resampling experimental data to 500.0 Hz
+14:24:01 [Step-02][sub-215, run-02] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-02_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-02_proc-filt_raw.fif
+14:24:02 [Step-02][sub-197, run-08] Band-pass filtering data; range: 1.0 – 150.0 Hz
+14:24:04 [Step-02][sub-215, run-01] Band-pass filtering data; range: 1.0 – 150.0 Hz
+14:24:07 [Step-02][sub-215, run-02] Band-pass filtering data; range: 1.0 – 150.0 Hz
+14:24:08 [Step-02][sub-197, run-08] Filtering empty-room data between 1.0 and 150.0 Hz
+14:24:09 [Step-02][sub-197, run-08] Resampling experimental data to 500.0 Hz
+14:24:10 [Step-02][sub-215, run-01] Filtering empty-room data between 1.0 and 150.0 Hz
+14:24:10 [Step-02][sub-197, run-06] Resampling empty-room recording.
+14:24:12 [Step-02][sub-197, run-07] Resampling empty-room recording.
+14:24:13 [Step-02][sub-215, run-02] Filtering empty-room data between 1.0 and 150.0 Hz
+14:24:14 [Step-02][sub-215, run-01] Resampling experimental data to 500.0 Hz
+14:24:15 [Step-02][sub-215, run-02] Resampling experimental data to 500.0 Hz
+14:24:16 [Step-02][sub-215, run-03] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-03_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-03_proc-filt_raw.fif
+14:24:17 [Step-02][sub-215, run-04] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-04_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-04_proc-filt_raw.fif
+14:24:19 [Step-02][sub-215, run-03] Band-pass filtering data; range: 1.0 – 150.0 Hz
+14:24:20 [Step-02][sub-197, run-08] Resampling empty-room recording.
+14:24:20 [Step-02][sub-215, run-04] Band-pass filtering data; range: 1.0 – 150.0 Hz
+14:24:23 [Step-02][sub-215, run-01] Resampling empty-room recording.
+14:24:23 [Step-02][sub-215, run-05] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-05_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-05_proc-filt_raw.fif
+14:24:25 [Step-02][sub-215, run-03] Filtering empty-room data between 1.0 and 150.0 Hz
+14:24:26 [Step-02][sub-215, run-04] Filtering empty-room data between 1.0 and 150.0 Hz
+14:24:26 [Step-02][sub-215, run-05] Band-pass filtering data; range: 1.0 – 150.0 Hz
+14:24:26 [Step-02][sub-215, run-03] Resampling experimental data to 500.0 Hz
+14:24:26 [Step-02][sub-215, run-02] Resampling empty-room recording.
+14:24:26 [Step-02][sub-215, run-06] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-06_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-06_proc-filt_raw.fif
+14:24:27 [Step-02][sub-215, run-04] Resampling experimental data to 500.0 Hz
+14:24:29 [Step-02][sub-215, run-06] Band-pass filtering data; range: 1.0 – 150.0 Hz
+14:24:31 [Step-02][sub-215, run-07] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-07_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-07_proc-filt_raw.fif
+14:24:32 [Step-02][sub-215, run-05] Filtering empty-room data between 1.0 and 150.0 Hz
+14:24:33 [Step-02][sub-215, run-05] Resampling experimental data to 500.0 Hz
+14:24:34 [Step-02][sub-215, run-07] Band-pass filtering data; range: 1.0 – 150.0 Hz
+14:24:35 [Step-02][sub-215, run-06] Filtering empty-room data between 1.0 and 150.0 Hz
+14:24:36 [Step-02][sub-215, run-06] Resampling experimental data to 500.0 Hz
+14:24:38 [Step-02][sub-215, run-03] Resampling empty-room recording.
+14:24:39 [Step-02][sub-215, run-04] Resampling empty-room recording.
+14:24:39 [Step-02][sub-215, run-07] Filtering empty-room data between 1.0 and 150.0 Hz
+14:24:41 [Step-02][sub-215, run-07] Resampling experimental data to 500.0 Hz
+14:24:41 [Step-02][sub-215, run-08] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-08_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-08_proc-filt_raw.fif
+14:24:42 [Step-02][sub-231, run-01] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-231/meg/sub-231_task-tiwm_run-01_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-231/meg/sub-231_task-tiwm_run-01_proc-filt_raw.fif
+14:24:44 [Step-02][sub-215, run-08] Band-pass filtering data; range: 1.0 – 150.0 Hz
+14:24:45 [Step-02][sub-215, run-05] Resampling empty-room recording.
+14:24:46 [Step-02][sub-231, run-01] Band-pass filtering data; range: 1.0 – 150.0 Hz
+14:24:46 [Step-02][sub-215, run-06] Resampling empty-room recording.
+14:24:48 [Step-02][sub-215, run-08] Filtering empty-room data between 1.0 and 150.0 Hz
+14:24:49 [Step-02][sub-231, run-02] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-231/meg/sub-231_task-tiwm_run-02_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-231/meg/sub-231_task-tiwm_run-02_proc-filt_raw.fif
+14:24:50 [Step-02][sub-215, run-08] Resampling experimental data to 500.0 Hz
+14:24:51 [Step-02][sub-231, run-03] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-231/meg/sub-231_task-tiwm_run-03_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-231/meg/sub-231_task-tiwm_run-03_proc-filt_raw.fif
+14:24:51 [Step-02][sub-231, run-01] Filtering empty-room data between 1.0 and 150.0 Hz
+14:24:52 [Step-02][sub-215, run-07] Resampling empty-room recording.
+14:24:53 [Step-02][sub-231, run-01] Resampling experimental data to 500.0 Hz
+14:24:56 [Step-02][sub-231, run-02] Band-pass filtering data; range: 1.0 – 150.0 Hz
+14:24:56 [Step-02][sub-231, run-04] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-231/meg/sub-231_task-tiwm_run-04_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-231/meg/sub-231_task-tiwm_run-04_proc-filt_raw.fif
+14:24:58 [Step-02][sub-231, run-03] Band-pass filtering data; range: 1.0 – 150.0 Hz
+14:25:00 [Step-02][sub-231, run-04] Band-pass filtering data; range: 1.0 – 150.0 Hz
+14:25:00 [Step-02][sub-215, run-08] Resampling empty-room recording.
+14:25:01 [Step-02][sub-231, run-02] Filtering empty-room data between 1.0 and 150.0 Hz
+14:25:02 [Step-02][sub-231, run-02] Resampling experimental data to 500.0 Hz
+14:25:03 [Step-02][sub-231, run-03] Filtering empty-room data between 1.0 and 150.0 Hz
+14:25:03 [Step-02][sub-231, run-05] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-231/meg/sub-231_task-tiwm_run-05_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-231/meg/sub-231_task-tiwm_run-05_proc-filt_raw.fif
+14:25:04 [Step-02][sub-231, run-03] Resampling experimental data to 500.0 Hz
+14:25:05 [Step-02][sub-231, run-01] Resampling empty-room recording.
+14:25:05 [Step-02][sub-231, run-04] Filtering empty-room data between 1.0 and 150.0 Hz
+14:25:06 [Step-02][sub-231, run-04] Resampling experimental data to 500.0 Hz
+14:25:06 [Step-02][sub-231, run-05] Band-pass filtering data; range: 1.0 – 150.0 Hz
+14:25:09 [Step-02][sub-231, run-06] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-231/meg/sub-231_task-tiwm_run-06_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-231/meg/sub-231_task-tiwm_run-06_proc-filt_raw.fif
+14:25:11 [Step-02][sub-231, run-05] Filtering empty-room data between 1.0 and 150.0 Hz
+14:25:11 [Step-02][sub-231, run-06] Band-pass filtering data; range: 1.0 – 150.0 Hz
+14:25:11 [Step-02][sub-231, run-05] Resampling experimental data to 500.0 Hz
+14:25:14 [Step-02][sub-231, run-02] Resampling empty-room recording.
+14:25:15 [Step-02][sub-231, run-03] Resampling empty-room recording.
+14:25:17 [Step-02][sub-231, run-06] Filtering empty-room data between 1.0 and 150.0 Hz
+14:25:18 [Step-02][sub-231, run-06] Resampling experimental data to 500.0 Hz
+14:25:18 [Step-02][sub-231, run-04] Resampling empty-room recording.
+14:25:18 [Step-02][sub-231, run-07] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-231/meg/sub-231_task-tiwm_run-07_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-231/meg/sub-231_task-tiwm_run-07_proc-filt_raw.fif
+14:25:19 [Step-02][sub-231, run-08] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-231/meg/sub-231_task-tiwm_run-08_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-231/meg/sub-231_task-tiwm_run-08_proc-filt_raw.fif
+14:25:20 [Step-02][sub-231, run-07] Band-pass filtering data; range: 1.0 – 150.0 Hz
+14:25:21 [Step-02][sub-231, run-08] Band-pass filtering data; range: 1.0 – 150.0 Hz
+14:25:22 [Step-02][sub-486, run-01] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-486/meg/sub-486_task-tiwm_run-01_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-486/meg/sub-486_task-tiwm_run-01_proc-filt_raw.fif
+14:25:22 [Step-02][sub-231, run-05] Resampling empty-room recording.
+14:25:25 [Step-02][sub-231, run-07] Filtering empty-room data between 1.0 and 150.0 Hz
+14:25:26 [Step-02][sub-486, run-01] Band-pass filtering data; range: 1.0 – 150.0 Hz
+14:25:26 [Step-02][sub-486, run-02] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-486/meg/sub-486_task-tiwm_run-02_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-486/meg/sub-486_task-tiwm_run-02_proc-filt_raw.fif
+14:25:26 [Step-02][sub-231, run-07] Resampling experimental data to 500.0 Hz
+14:25:26 [Step-02][sub-231, run-08] Filtering empty-room data between 1.0 and 150.0 Hz
+14:25:27 [Step-02][sub-231, run-08] Resampling experimental data to 500.0 Hz
+14:25:29 [Step-02][sub-231, run-06] Resampling empty-room recording.
+14:25:30 [Step-02][sub-486, run-02] Band-pass filtering data; range: 1.0 – 150.0 Hz
+14:25:31 [Step-02][sub-486, run-01] Filtering empty-room data between 1.0 and 150.0 Hz
+14:25:32 [Step-02][sub-486, run-01] Resampling experimental data to 500.0 Hz
+14:25:33 [Step-02][sub-486, run-03] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-486/meg/sub-486_task-tiwm_run-03_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-486/meg/sub-486_task-tiwm_run-03_proc-filt_raw.fif
+14:25:35 [Step-02][sub-486, run-02] Filtering empty-room data between 1.0 and 150.0 Hz
+14:25:36 [Step-02][sub-486, run-02] Resampling experimental data to 500.0 Hz
+14:25:37 [Step-02][sub-486, run-03] Band-pass filtering data; range: 1.0 – 150.0 Hz
+14:25:38 [Step-02][sub-231, run-07] Resampling empty-room recording.
+14:25:38 [Step-02][sub-231, run-08] Resampling empty-room recording.
+14:25:41 [Step-02][sub-486, run-04] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-486/meg/sub-486_task-tiwm_run-04_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-486/meg/sub-486_task-tiwm_run-04_proc-filt_raw.fif
+14:25:42  A critical error occurred.
+joblib.externals.loky.process_executor._RemoteTraceback:
+"""
+Traceback (most recent call last):
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/site-packages/joblib/externals/loky/process_executor.py", line 431, in _process_worker
+    r = call_item()
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/site-packages/joblib/externals/loky/process_executor.py", line 285, in __call__
+    return self.fn(*self.args, **self.kwargs)
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/site-packages/joblib/_parallel_backends.py", line 595, in __call__
+    return self.func(*args, **kwargs)
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/site-packages/joblib/parallel.py", line 262, in __call__
+    return [func(*args, **kwargs)
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/site-packages/joblib/parallel.py", line 262, in <listcomp>
+    return [func(*args, **kwargs)
+  File "/storage/store/work/csegerie/parietal/mne-bids-pipeline/scripts/preprocessing/02-frequency_filter.py", line 124, in run_filter
+    raw_er.save(raw_er_fname_out, overwrite=True, split_naming='bids')
+  File "<decorator-gen-187>", line 24, in save
+  File "/storage/store/work/csegerie/parietal/mne-python/mne/io/base.py", line 1449, in save
+    _write_raw(fname, self, info, picks, fmt, data_type, reset_range,
+  File "/storage/store/work/csegerie/parietal/mne-python/mne/io/base.py", line 2108, in _write_raw
+    final_fname = _write_raw_fid(
+  File "/storage/store/work/csegerie/parietal/mne-python/mne/io/base.py", line 2137, in __exit__
+    os.remove(self.fname)
+FileNotFoundError: [Errno 2] No such file or directory: '/storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-231/meg/sub-231_task-noise_proc-filt_split-01_raw.fif'
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/storage/store/work/csegerie/parietal/mne-bids-pipeline/run.py", line 200, in <module>
+    fire.Fire(process)
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/site-packages/fire/core.py", line 141, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/site-packages/fire/core.py", line 466, in _Fire
+    component, remaining_args = _CallAndUpdateTrace(
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/site-packages/fire/core.py", line 681, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+  File "/storage/store/work/csegerie/parietal/mne-bids-pipeline/run.py", line 195, in process
+    _run_script(script_path, config, root_dir, subject, session, task, run)
+  File "/storage/store/work/csegerie/parietal/mne-bids-pipeline/run.py", line 101, in _run_script
+    runpy.run_path(script_path, run_name='__main__')
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/runpy.py", line 268, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/runpy.py", line 97, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/storage/store/work/csegerie/parietal/mne-bids-pipeline/scripts/preprocessing/02-frequency_filter.py", line 161, in <module>
+    main()
+  File "/storage/store/work/csegerie/parietal/mne-bids-pipeline/config.py", line 1775, in wrapper
+    raise(e)
+  File "/storage/store/work/csegerie/parietal/mne-bids-pipeline/config.py", line 1768, in wrapper
+    return func(*args, **kwargs)
+  File "/storage/store/work/csegerie/parietal/mne-bids-pipeline/scripts/preprocessing/02-frequency_filter.py", line 153, in main
+    parallel(run_func(subject, run, session) for subject, run, session in
+  File "/storage/store/work/csegerie/parietal/mne-python/mne/parallel.py", line 128, in run
+    return fun(*args, **kwargs)
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/site-packages/joblib/parallel.py", line 1054, in __call__
+    self.retrieve()
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/site-packages/joblib/parallel.py", line 933, in retrieve
+    self._output.extend(job.get(timeout=self.timeout))
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/site-packages/joblib/_parallel_backends.py", line 542, in wrap_future_result
+    return future.result(timeout=timeout)
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/concurrent/futures/_base.py", line 440, in result
+    return self.__get_result()
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+FileNotFoundError: [Errno 2] No such file or directory: '/storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-231/meg/sub-231_task-noise_proc-filt_split-01_raw.fif'
+(mne_dev) csegerie@drago4:/storage/store/work/csegerie/parietal/mne-bids-pipeline$ nice -n 5 python run.py --config=/storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/config.py --steps=preprocessing,sensor,re
+port
+2021-06-10 14:30:31 INFO Now running: init_derivatives_dir
+14:30:32 Using custom configuration: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/config.py
+14:30:33 [Step-01] Running: Initializing output directories.
+14:30:33 [Step-01] Initializing output directories.
+14:30:36 Using custom configuration: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/config.py
+14:30:36 Using custom configuration: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/config.py
+14:30:36 Using custom configuration: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/config.py
+14:30:36 Using custom configuration: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/config.py
+14:30:36 Using custom configuration: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/config.py
+14:30:37 [Step-01] Completed: Initializing output directories.
+2021-06-10 14:30:37 INFO Successfully finished running: init_derivatives_dir
+2021-06-10 14:30:37 INFO Now running: import_and_maxfilter
+14:30:38 [Step-01] Running Step 1: Data import
+14:30:38 [Step-01][sub-197] Loading reference run: 01.
+14:30:39 [Step-01][sub-486] Loading reference run: 01.
+14:30:39 [Step-01][sub-788] Loading reference run: 01.
+14:30:39 [Step-01][sub-231] Loading reference run: 01.
+14:30:39 [Step-01][sub-215] Loading reference run: 01.
+14:30:42 [Step-01][sub-486, run-01] Applying Maxwell filter to experimental data.
+14:30:42 [Step-01][sub-231, run-01] Applying Maxwell filter to experimental data.
+14:30:42 [Step-01][sub-231, run-01]
+Found no bad channels.
+
+14:30:42 [Step-01][sub-197, run-01] Applying Maxwell filter to experimental data.
+14:30:42 [Step-01][sub-215, run-01] Applying Maxwell filter to experimental data.
+14:30:42 [Step-01][sub-215, run-01]
+Found no bad channels.
+
+14:30:42 [Step-01][sub-788, run-01] Applying Maxwell filter to experimental data.
+14:30:55 [Step-01][sub-231] Processing empty-room recording …
+14:30:55 [Step-01][sub-486] Processing empty-room recording …
+14:30:56 [Step-01][sub-788] Processing empty-room recording …
+14:30:56 [Step-01][sub-215] Processing empty-room recording …
+14:30:56 [Step-01][sub-197] Processing empty-room recording …
+14:30:56 [Step-01][sub-486] Applying Maxwell filter to empty-room recording
+14:30:56 [Step-01][sub-231] Applying Maxwell filter to empty-room recording
+14:30:56 [Step-01][sub-197] Applying Maxwell filter to empty-room recording
+14:30:57 [Step-01][sub-788] Applying Maxwell filter to empty-room recording
+14:30:57 [Step-01][sub-215] Applying Maxwell filter to empty-room recording
+14:31:00 [Step-01][sub-231, run-02] Applying Maxwell filter to experimental data.
+14:31:00 [Step-01][sub-231, run-02]
+Found no bad channels.
+
+14:31:00 [Step-01][sub-486, run-02] Applying Maxwell filter to experimental data.
+14:31:01 [Step-01][sub-197, run-02] Applying Maxwell filter to experimental data.
+14:31:01 [Step-01][sub-788, run-02] Applying Maxwell filter to experimental data.
+14:31:02 [Step-01][sub-215, run-02] Applying Maxwell filter to experimental data.
+14:31:02 [Step-01][sub-215, run-02]
+Found no bad channels.
+
+14:31:14 [Step-01][sub-231, run-03] Applying Maxwell filter to experimental data.
+14:31:14 [Step-01][sub-231, run-03]
+Found no bad channels.
+
+14:31:16 [Step-01][sub-486, run-03] Applying Maxwell filter to experimental data.
+14:31:17 [Step-01][sub-215, run-03] Applying Maxwell filter to experimental data.
+14:31:17 [Step-01][sub-215, run-03]
+Found no bad channels.
+
+14:31:17 [Step-01][sub-788, run-03] Applying Maxwell filter to experimental data.
+14:31:18 [Step-01][sub-197, run-03] Applying Maxwell filter to experimental data.
+14:31:29 [Step-01][sub-486, run-04] Applying Maxwell filter to experimental data.
+14:31:29 [Step-01][sub-231, run-04] Applying Maxwell filter to experimental data.
+14:31:29 [Step-01][sub-231, run-04]
+Found no bad channels.
+
+14:31:33 [Step-01][sub-788, run-04] Applying Maxwell filter to experimental data.
+14:31:34 [Step-01][sub-197, run-04] Applying Maxwell filter to experimental data.
+14:31:35 [Step-01][sub-215, run-04] Applying Maxwell filter to experimental data.
+14:31:35 [Step-01][sub-215, run-04]
+Found no bad channels.
+
+14:31:41 [Step-01][sub-486, run-05] Applying Maxwell filter to experimental data.
+14:31:42 [Step-01][sub-231, run-05] Applying Maxwell filter to experimental data.
+14:31:42 [Step-01][sub-231, run-05]
+Found no bad channels.
+
+14:31:48 [Step-01][sub-788, run-05] Applying Maxwell filter to experimental data.
+14:31:49 [Step-01][sub-215, run-05] Applying Maxwell filter to experimental data.
+14:31:49 [Step-01][sub-215, run-05]
+Found no bad channels.
+
+14:31:50 [Step-01][sub-197, run-05] Applying Maxwell filter to experimental data.
+14:31:53 [Step-01][sub-486, run-06] Applying Maxwell filter to experimental data.
+14:31:56 [Step-01][sub-231, run-06] Applying Maxwell filter to experimental data.
+14:31:56 [Step-01][sub-231, run-06]
+Found no bad channels.
+
+14:32:02 [Step-01][sub-788, run-06] Applying Maxwell filter to experimental data.
+14:32:05 [Step-01][sub-215, run-06] Applying Maxwell filter to experimental data.
+14:32:05 [Step-01][sub-215, run-06]
+Found no bad channels.
+
+14:32:05 [Step-01][sub-197, run-06] Applying Maxwell filter to experimental data.
+14:32:06 [Step-01][sub-486, run-07] Applying Maxwell filter to experimental data.
+14:32:11 [Step-01][sub-231, run-07] Applying Maxwell filter to experimental data.
+14:32:11 [Step-01][sub-231, run-07]
+Found no bad channels.
+
+14:32:19 [Step-01][sub-486, run-08] Applying Maxwell filter to experimental data.
+14:32:20 [Step-01][sub-215, run-07] Applying Maxwell filter to experimental data.
+14:32:20 [Step-01][sub-215, run-07]
+Found no bad channels.
+
+14:32:20 [Step-01][sub-788, run-07] Applying Maxwell filter to experimental data.
+14:32:20 [Step-01][sub-197, run-07] Applying Maxwell filter to experimental data.
+14:32:28 [Step-01][sub-231, run-08] Applying Maxwell filter to experimental data.
+14:32:28 [Step-01][sub-231, run-08]
+Found no bad channels.
+
+14:32:33 [Step-01][sub-840] Loading reference run: 01.
+14:32:35 [Step-01][sub-788, run-08] Applying Maxwell filter to experimental data.
+14:32:35 [Step-01][sub-215, run-08] Applying Maxwell filter to experimental data.
+14:32:35 [Step-01][sub-215, run-08]
+Found no bad channels.
+
+14:32:35 [Step-01][sub-197, run-08] Applying Maxwell filter to experimental data.
+14:32:37 [Step-01][sub-840, run-01] Applying Maxwell filter to experimental data.
+14:32:48 [Step-01][sub-840] Processing empty-room recording …
+14:32:48 [Step-01][sub-840] Applying Maxwell filter to empty-room recording
+14:32:51 [Step-01][sub-840, run-02] Applying Maxwell filter to experimental data.
+14:33:01 [Step-01][sub-840, run-03] Applying Maxwell filter to experimental data.
+14:33:11 [Step-01][sub-840, run-04] Applying Maxwell filter to experimental data.
+14:33:20 [Step-01][sub-840, run-05] Applying Maxwell filter to experimental data.
+14:33:29 [Step-01][sub-840, run-06] Applying Maxwell filter to experimental data.
+14:33:37 [Step-01][sub-840, run-07] Applying Maxwell filter to experimental data.
+14:33:47 [Step-01][sub-840, run-08] Applying Maxwell filter to experimental data.
+14:33:53 [Step-01] Completed Step 1: Data import
+2021-06-10 14:33:53 INFO Successfully finished running: import_and_maxfilter
+2021-06-10 14:33:53 INFO Now running: frequency_filter
+14:33:53 [Step-02] Running Step 2: Frequency filtering
+14:34:00 [Step-02][sub-197, run-04] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-04_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-04_proc-filt_raw.fif
+14:34:00 [Step-02][sub-197, run-03] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-03_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-03_proc-filt_raw.fif
+14:34:00 [Step-02][sub-197, run-05] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-05_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-05_proc-filt_raw.fif
+14:34:00 [Step-02][sub-197, run-02] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-02_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-02_proc-filt_raw.fif
+14:34:00 [Step-02][sub-197, run-01] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-01_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-01_proc-filt_raw.fif
+14:34:05 [Step-02][sub-197, run-04] Band-pass filtering data; range: 1.0 – 150.0 Hz
+14:34:05 [Step-02][sub-197, run-05] Band-pass filtering data; range: 1.0 – 150.0 Hz
+14:34:05 [Step-02][sub-197, run-03] Band-pass filtering data; range: 1.0 – 150.0 Hz
+14:34:06 [Step-02][sub-197, run-01] Band-pass filtering data; range: 1.0 – 150.0 Hz
+14:34:06 [Step-02][sub-197, run-02] Band-pass filtering data; range: 1.0 – 150.0 Hz
+14:34:11 [Step-02][sub-197, run-05] Filtering empty-room data between 1.0 and 150.0 Hz
+14:34:11 [Step-02][sub-197, run-04] Filtering empty-room data between 1.0 and 150.0 Hz
+14:34:11 [Step-02][sub-197, run-03] Filtering empty-room data between 1.0 and 150.0 Hz
+14:34:12 [Step-02][sub-197, run-05] Resampling experimental data to 500.0 Hz
+14:34:12 [Step-02][sub-197, run-04] Resampling experimental data to 500.0 Hz
+14:34:12 [Step-02][sub-197, run-03] Resampling experimental data to 500.0 Hz
+14:34:13 [Step-02][sub-197, run-01] Filtering empty-room data between 1.0 and 150.0 Hz
+14:34:13 [Step-02][sub-197, run-02] Filtering empty-room data between 1.0 and 150.0 Hz
+14:34:14 [Step-02][sub-197, run-01] Resampling experimental data to 500.0 Hz
+14:34:14 [Step-02][sub-197, run-02] Resampling experimental data to 500.0 Hz
+14:34:25 [Step-02][sub-197, run-03] Resampling empty-room recording.
+14:34:27 [Step-02][sub-197, run-04] Resampling empty-room recording.
+14:34:27 [Step-02][sub-197, run-01] Resampling empty-room recording.
+14:34:27 [Step-02][sub-197, run-05] Resampling empty-room recording.
+14:34:29 [Step-02][sub-197, run-02] Resampling empty-room recording.
+/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/site-packages/joblib/externals/loky/process_executor.py:688: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by
+ a too short worker timeout or by a memory leak.
+  warnings.warn(
+14:34:33 Using custom configuration: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/config.py
+14:34:33 [Step-02][sub-197, run-06] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-06_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-06_proc-filt_raw.fif
+14:34:34 [Step-02][sub-197, run-07] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-07_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-07_proc-filt_raw.fif
+14:34:34 [Step-02][sub-215, run-01] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-01_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-01_proc-filt_raw.fif
+14:34:34 [Step-02][sub-215, run-02] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-02_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-215/meg/sub-215_task-tiwm_run-02_proc-filt_raw.fif
+14:34:35  A critical error occurred.
+joblib.externals.loky.process_executor._RemoteTraceback:
+"""
+Traceback (most recent call last):
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/site-packages/joblib/externals/loky/process_executor.py", line 431, in _process_worker
+    r = call_item()
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/site-packages/joblib/externals/loky/process_executor.py", line 285, in __call__
+    return self.fn(*self.args, **self.kwargs)
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/site-packages/joblib/_parallel_backends.py", line 595, in __call__
+    return self.func(*args, **kwargs)
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/site-packages/joblib/parallel.py", line 262, in __call__
+    return [func(*args, **kwargs)
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/site-packages/joblib/parallel.py", line 262, in <listcomp>
+    return [func(*args, **kwargs)
+  File "/storage/store/work/csegerie/parietal/mne-bids-pipeline/scripts/preprocessing/02-frequency_filter.py", line 124, in run_filter
+    raw_er.save(raw_er_fname_out, overwrite=True, split_naming='bids')
+  File "<decorator-gen-187>", line 24, in save
+  File "/storage/store/work/csegerie/parietal/mne-python/mne/io/base.py", line 1449, in save
+    _write_raw(fname, self, info, picks, fmt, data_type, reset_range,
+  File "/storage/store/work/csegerie/parietal/mne-python/mne/io/base.py", line 2108, in _write_raw
+    final_fname = _write_raw_fid(
+  File "/storage/store/work/csegerie/parietal/mne-python/mne/io/base.py", line 2137, in __exit__
+    os.remove(self.fname)
+FileNotFoundError: [Errno 2] No such file or directory: '/storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-noise_proc-filt_split-01_raw.fif'
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/storage/store/work/csegerie/parietal/mne-bids-pipeline/run.py", line 200, in <module>
+    fire.Fire(process)
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/site-packages/fire/core.py", line 141, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/site-packages/fire/core.py", line 466, in _Fire
+    component, remaining_args = _CallAndUpdateTrace(
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/site-packages/fire/core.py", line 681, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+  File "/storage/store/work/csegerie/parietal/mne-bids-pipeline/run.py", line 195, in process
+    _run_script(script_path, config, root_dir, subject, session, task, run)
+  File "/storage/store/work/csegerie/parietal/mne-bids-pipeline/run.py", line 101, in _run_script
+    runpy.run_path(script_path, run_name='__main__')
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/runpy.py", line 268, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/runpy.py", line 97, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/storage/store/work/csegerie/parietal/mne-bids-pipeline/scripts/preprocessing/02-frequency_filter.py", line 161, in <module>
+    main()
+  File "/storage/store/work/csegerie/parietal/mne-bids-pipeline/config.py", line 1775, in wrapper
+    raise(e)
+  File "/storage/store/work/csegerie/parietal/mne-bids-pipeline/config.py", line 1768, in wrapper
+    return func(*args, **kwargs)
+  File "/storage/store/work/csegerie/parietal/mne-bids-pipeline/scripts/preprocessing/02-frequency_filter.py", line 153, in main
+    parallel(run_func(subject, run, session) for subject, run, session in
+  File "/storage/store/work/csegerie/parietal/mne-python/mne/parallel.py", line 128, in run
+    return fun(*args, **kwargs)
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/site-packages/joblib/parallel.py", line 1054, in __call__
+    self.retrieve()
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/site-packages/joblib/parallel.py", line 933, in retrieve
+    self._output.extend(job.get(timeout=self.timeout))
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/site-packages/joblib/_parallel_backends.py", line 542, in wrap_future_result
+    return future.result(timeout=timeout)
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/concurrent/futures/_base.py", line 433, in result
+    return self.__get_result()
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+FileNotFoundError: [Errno 2] No such file or directory: '/storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-noise_proc-filt_split-01_raw.fif'
+(mne_dev) csegerie@drago4:/storage/store/work/csegerie/parietal/mne-bids-pipeline$ nice -n 5 python run.py --config=/storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/config.py --steps=preprocessing,sensor,re
+port
+2021-06-10 15:23:28 INFO Now running: init_derivatives_dir
+15:23:29 Using custom configuration: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/config.py
+15:23:30 [Step-01] Running: Initializing output directories.
+15:23:30 [Step-01] Initializing output directories.
+15:23:32 Using custom configuration: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/config.py
+15:23:32 Using custom configuration: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/config.py
+15:23:32 Using custom configuration: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/config.py
+15:23:32 Using custom configuration: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/config.py
+15:23:32 Using custom configuration: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/config.py
+15:23:33 [Step-01] Completed: Initializing output directories.
+2021-06-10 15:23:33 INFO Successfully finished running: init_derivatives_dir
+2021-06-10 15:23:33 INFO Now running: import_and_maxfilter
+15:23:34 [Step-01] Running Step 1: Data import
+^CTraceback (most recent call last):
+  File "/storage/store/work/csegerie/parietal/mne-bids-pipeline/run.py", line 200, in <module>
+    fire.Fire(process)
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/site-packages/fire/core.py", line 141, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/site-packages/fire/core.py", line 466, in _Fire
+    component, remaining_args = _CallAndUpdateTrace(
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/site-packages/fire/core.py", line 681, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+  File "/storage/store/work/csegerie/parietal/mne-bids-pipeline/run.py", line 195, in process
+    _run_script(script_path, config, root_dir, subject, session, task, run)
+  File "/storage/store/work/csegerie/parietal/mne-bids-pipeline/run.py", line 101, in _run_script
+    runpy.run_path(script_path, run_name='__main__')
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/runpy.py", line 268, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/runpy.py", line 97, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/storage/store/work/csegerie/parietal/mne-bids-pipeline/scripts/preprocessing/01-import_and_maxfilter.py", line 482, in <module>
+    main()
+  File "/storage/store/work/csegerie/parietal/mne-bids-pipeline/config.py", line 1768, in wrapper
+    return func(*args, **kwargs)
+  File "/storage/store/work/csegerie/parietal/mne-bids-pipeline/scripts/preprocessing/01-import_and_maxfilter.py", line 474, in main
+    parallel(run_func(subject, session) for subject, session in
+  File "/storage/store/work/csegerie/parietal/mne-python/mne/parallel.py", line 128, in run
+    return fun(*args, **kwargs)
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/site-packages/joblib/parallel.py", line 1054, in __call__
+    self.retrieve()
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/site-packages/joblib/parallel.py", line 933, in retrieve
+    self._output.extend(job.get(timeout=self.timeout))
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/site-packages/joblib/_parallel_backends.py", line 542, in wrap_future_result
+    return future.result(timeout=timeout)
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/concurrent/futures/_base.py", line 435, in result
+    self._condition.wait(timeout)
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/threading.py", line 312, in wait
+    waiter.acquire()
+KeyboardInterrupt
+
+(mne_dev) csegerie@drago4:/storage/store/work/csegerie/parietal/mne-bids-pipeline$ nice -n 5 python run.py --config=/storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/config.py --steps=preprocessing,sensor,re
+port
+2021-06-10 15:26:04 INFO Now running: init_derivatives_dir
+15:26:05 Using custom configuration: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/config.py
+15:26:06 [Step-01] Running: Initializing output directories.
+15:26:06 [Step-01] Initializing output directories.
+15:26:08 Using custom configuration: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/config.py
+15:26:08 Using custom configuration: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/config.py
+15:26:08 Using custom configuration: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/config.py
+15:26:08 Using custom configuration: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/config.py
+15:26:08 Using custom configuration: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/config.py
+15:26:10 [Step-01] Completed: Initializing output directories.
+2021-06-10 15:26:10 INFO Successfully finished running: init_derivatives_dir
+2021-06-10 15:26:10 INFO Now running: import_and_maxfilter
+15:26:10 [Step-01] Running Step 1: Data import
+15:26:11 [Step-01][sub-197] Loading reference run: 01.
+15:26:11 [Step-01][sub-231] Loading reference run: 01.
+15:26:11 [Step-01][sub-215] Loading reference run: 01.
+15:26:11 [Step-01][sub-486] Loading reference run: 01.
+15:26:11 [Step-01][sub-788] Loading reference run: 01.
+15:26:14 [Step-01][sub-486, run-01] Applying Maxwell filter to experimental data.
+15:26:14 [Step-01][sub-215, run-01] Applying Maxwell filter to experimental data.
+15:26:14 [Step-01][sub-215, run-01]
+Found no bad channels.
+
+15:26:14 [Step-01][sub-788, run-01] Applying Maxwell filter to experimental data.
+15:26:15 [Step-01][sub-231, run-01] Applying Maxwell filter to experimental data.
+15:26:15 [Step-01][sub-231, run-01]
+Found no bad channels.
+
+15:26:15 [Step-01][sub-197, run-01] Applying Maxwell filter to experimental data.
+15:26:25 [Step-01][sub-486] Processing empty-room recording …
+15:26:27 [Step-01][sub-215] Processing empty-room recording …
+15:26:29 [Step-01][sub-197] Processing empty-room recording …
+15:26:29 [Step-01][sub-788] Processing empty-room recording …
+15:26:29 [Step-01][sub-486] Applying Maxwell filter to empty-room recording
+15:26:29 [Step-01][sub-231] Processing empty-room recording …
+15:26:29 [Step-01][sub-197] Applying Maxwell filter to empty-room recording
+15:26:30 [Step-01][sub-231] Applying Maxwell filter to empty-room recording
+15:26:30 [Step-01][sub-788] Applying Maxwell filter to empty-room recording
+15:26:30 [Step-01][sub-215] Applying Maxwell filter to empty-room recording
+15:26:33 [Step-01][sub-486, run-02] Applying Maxwell filter to experimental data.
+15:26:34 [Step-01][sub-231, run-02] Applying Maxwell filter to experimental data.
+15:26:34 [Step-01][sub-231, run-02]
+Found no bad channels.
+
+15:26:34 [Step-01][sub-197, run-02] Applying Maxwell filter to experimental data.
+15:26:34 [Step-01][sub-788, run-02] Applying Maxwell filter to experimental data.
+15:26:35 [Step-01][sub-215, run-02] Applying Maxwell filter to experimental data.
+15:26:35 [Step-01][sub-215, run-02]
+Found no bad channels.
+
+15:26:50 [Step-01][sub-788, run-03] Applying Maxwell filter to experimental data.
+15:26:52 [Step-01][sub-197, run-03] Applying Maxwell filter to experimental data.
+15:26:52 [Step-01][sub-215, run-03] Applying Maxwell filter to experimental data.
+15:26:52 [Step-01][sub-215, run-03]
+Found no bad channels.
+
+15:26:52 [Step-01][sub-231, run-03] Applying Maxwell filter to experimental data.
+15:26:52 [Step-01][sub-231, run-03]
+Found no bad channels.
+
+15:26:52 [Step-01][sub-486, run-03] Applying Maxwell filter to experimental data.
+15:27:05 [Step-01][sub-788, run-04] Applying Maxwell filter to experimental data.
+15:27:06 [Step-01][sub-486, run-04] Applying Maxwell filter to experimental data.
+15:27:06 [Step-01][sub-231, run-04] Applying Maxwell filter to experimental data.
+15:27:06 [Step-01][sub-231, run-04]
+Found no bad channels.
+
+15:27:07 [Step-01][sub-215, run-04] Applying Maxwell filter to experimental data.
+15:27:07 [Step-01][sub-215, run-04]
+Found no bad channels.
+
+15:27:08 [Step-01][sub-197, run-04] Applying Maxwell filter to experimental data.
+15:27:19 [Step-01][sub-486, run-05] Applying Maxwell filter to experimental data.
+15:27:20 [Step-01][sub-788, run-05] Applying Maxwell filter to experimental data.
+15:27:21 [Step-01][sub-231, run-05] Applying Maxwell filter to experimental data.
+15:27:21 [Step-01][sub-231, run-05]
+Found no bad channels.
+
+15:27:24 [Step-01][sub-197, run-05] Applying Maxwell filter to experimental data.
+15:27:25 [Step-01][sub-215, run-05] Applying Maxwell filter to experimental data.
+15:27:25 [Step-01][sub-215, run-05]
+Found no bad channels.
+
+15:27:33 [Step-01][sub-486, run-06] Applying Maxwell filter to experimental data.
+15:27:36 [Step-01][sub-231, run-06] Applying Maxwell filter to experimental data.
+15:27:36 [Step-01][sub-231, run-06]
+Found no bad channels.
+
+15:27:36 [Step-01][sub-788, run-06] Applying Maxwell filter to experimental data.
+15:27:38 [Step-01][sub-215, run-06] Applying Maxwell filter to experimental data.
+15:27:38 [Step-01][sub-215, run-06]
+Found no bad channels.
+
+15:27:41 [Step-01][sub-197, run-06] Applying Maxwell filter to experimental data.
+15:27:48 [Step-01][sub-486, run-07] Applying Maxwell filter to experimental data.
+15:27:49 [Step-01][sub-231, run-07] Applying Maxwell filter to experimental data.
+15:27:49 [Step-01][sub-231, run-07]
+Found no bad channels.
+
+15:27:53 [Step-01][sub-215, run-07] Applying Maxwell filter to experimental data.
+15:27:53 [Step-01][sub-215, run-07]
+Found no bad channels.
+
+15:27:55 [Step-01][sub-788, run-07] Applying Maxwell filter to experimental data.
+15:27:55 [Step-01][sub-197, run-07] Applying Maxwell filter to experimental data.
+15:28:00 [Step-01][sub-486, run-08] Applying Maxwell filter to experimental data.
+15:28:01 [Step-01][sub-231, run-08] Applying Maxwell filter to experimental data.
+15:28:01 [Step-01][sub-231, run-08]
+Found no bad channels.
+
+15:28:07 [Step-01][sub-788, run-08] Applying Maxwell filter to experimental data.
+15:28:07 [Step-01][sub-215, run-08] Applying Maxwell filter to experimental data.
+15:28:07 [Step-01][sub-215, run-08]
+Found no bad channels.
+
+15:28:10 [Step-01][sub-197, run-08] Applying Maxwell filter to experimental data.
+15:28:13 [Step-01][sub-840] Loading reference run: 01.
+15:28:17 [Step-01][sub-840, run-01] Applying Maxwell filter to experimental data.
+15:28:25 [Step-01][sub-840] Processing empty-room recording …
+15:28:25 [Step-01][sub-840] Applying Maxwell filter to empty-room recording
+15:28:29 [Step-01][sub-840, run-02] Applying Maxwell filter to experimental data.
+15:28:38 [Step-01][sub-840, run-03] Applying Maxwell filter to experimental data.
+15:28:47 [Step-01][sub-840, run-04] Applying Maxwell filter to experimental data.
+15:28:56 [Step-01][sub-840, run-05] Applying Maxwell filter to experimental data.
+15:29:05 [Step-01][sub-840, run-06] Applying Maxwell filter to experimental data.
+15:29:14 [Step-01][sub-840, run-07] Applying Maxwell filter to experimental data.
+15:29:22 [Step-01][sub-840, run-08] Applying Maxwell filter to experimental data.
+15:29:29 [Step-01] Completed Step 1: Data import
+2021-06-10 15:29:29 INFO Successfully finished running: import_and_maxfilter
+2021-06-10 15:29:29 INFO Now running: frequency_filter
+15:29:29 [Step-02] Running Step 2: Frequency filtering
+15:29:36 [Step-02][sub-197, run-02] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-02_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-02_proc-filt_raw.fif
+15:29:36 [Step-02][sub-197, run-01] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-01_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-01_proc-filt_raw.fif
+15:29:36 [Step-02][sub-197, run-03] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-03_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-03_proc-filt_raw.fif
+15:29:36 [Step-02][sub-197, run-04] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-04_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-04_proc-filt_raw.fif
+15:29:36 [Step-02][sub-197, run-05] Input: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-05_proc-sss_raw.fif, Output: /storage/store2/data/time_in_wm_new/derivatives/mne
+-bids-pipeline/sub-197/meg/sub-197_task-tiwm_run-05_proc-filt_raw.fif
+15:29:41 [Step-02][sub-197, run-05] Band-pass filtering data; range: 1.0 – 150.0 Hz
+15:29:41 [Step-02][sub-197, run-03] Band-pass filtering data; range: 1.0 – 150.0 Hz
+15:29:41 [Step-02][sub-197, run-04] Band-pass filtering data; range: 1.0 – 150.0 Hz
+15:29:41 [Step-02][sub-197, run-01] Band-pass filtering data; range: 1.0 – 150.0 Hz
+15:29:41 [Step-02][sub-197, run-02] Band-pass filtering data; range: 1.0 – 150.0 Hz
+15:29:46 [Step-02][sub-197, run-05] Filtering empty-room data between 1.0 and 150.0 Hz
+15:29:47 [Step-02][sub-197, run-03] Filtering empty-room data between 1.0 and 150.0 Hz
+15:29:47 [Step-02][sub-197, run-01] Filtering empty-room data between 1.0 and 150.0 Hz
+15:29:47 [Step-02][sub-197, run-04] Filtering empty-room data between 1.0 and 150.0 Hz
+15:29:47 [Step-02][sub-197, run-05] Resampling experimental data to 500.0 Hz
+15:29:47 [Step-02][sub-197, run-03] Resampling experimental data to 500.0 Hz
+15:29:47 [Step-02][sub-197, run-01] Resampling experimental data to 500.0 Hz
+15:29:48 [Step-02][sub-197, run-02] Filtering empty-room data between 1.0 and 150.0 Hz
+15:29:48 [Step-02][sub-197, run-04] Resampling experimental data to 500.0 Hz
+15:29:49 [Step-02][sub-197, run-02] Resampling experimental data to 500.0 Hz
+15:30:01 [Step-02][sub-197, run-03] Resampling empty-room recording.
+15:30:01 [Step-02][sub-197, run-01] Resampling empty-room recording.
+15:30:01 [Step-02][sub-197, run-05] Resampling empty-room recording.
+15:30:02 [Step-02][sub-197, run-04] Resampling empty-room recording.
+15:30:03 [Step-02][sub-197, run-02] Resampling empty-room recording.
+15:30:04  A critical error occurred.
+joblib.externals.loky.process_executor._RemoteTraceback:
+"""
+Traceback (most recent call last):
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/site-packages/joblib/externals/loky/process_executor.py", line 431, in _process_worker
+    r = call_item()
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/site-packages/joblib/externals/loky/process_executor.py", line 285, in __call__
+    return self.fn(*self.args, **self.kwargs)
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/site-packages/joblib/_parallel_backends.py", line 595, in __call__
+    return self.func(*args, **kwargs)
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/site-packages/joblib/parallel.py", line 262, in __call__
+    return [func(*args, **kwargs)
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/site-packages/joblib/parallel.py", line 262, in <listcomp>
+    return [func(*args, **kwargs)
+  File "/storage/store/work/csegerie/parietal/mne-bids-pipeline/scripts/preprocessing/02-frequency_filter.py", line 124, in run_filter
+    raw_er.save(raw_er_fname_out, overwrite=True, split_naming='bids')
+  File "<decorator-gen-187>", line 24, in save
+  File "/storage/store/work/csegerie/parietal/mne-python/mne/io/base.py", line 1449, in save
+    _write_raw(fname, self, info, picks, fmt, data_type, reset_range,
+  File "/storage/store/work/csegerie/parietal/mne-python/mne/io/base.py", line 2108, in _write_raw
+    final_fname = _write_raw_fid(
+  File "/storage/store/work/csegerie/parietal/mne-python/mne/io/base.py", line 2137, in __exit__
+    os.remove(self.fname)
+FileNotFoundError: [Errno 2] No such file or directory: '/storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-noise_proc-filt_split-01_raw.fif'
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/storage/store/work/csegerie/parietal/mne-bids-pipeline/run.py", line 200, in <module>
+    fire.Fire(process)
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/site-packages/fire/core.py", line 141, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/site-packages/fire/core.py", line 466, in _Fire
+    component, remaining_args = _CallAndUpdateTrace(
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/site-packages/fire/core.py", line 681, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+  File "/storage/store/work/csegerie/parietal/mne-bids-pipeline/run.py", line 195, in process
+    _run_script(script_path, config, root_dir, subject, session, task, run)
+  File "/storage/store/work/csegerie/parietal/mne-bids-pipeline/run.py", line 101, in _run_script
+    runpy.run_path(script_path, run_name='__main__')
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/runpy.py", line 268, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/runpy.py", line 97, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/storage/store/work/csegerie/parietal/mne-bids-pipeline/scripts/preprocessing/02-frequency_filter.py", line 161, in <module>
+    main()
+  File "/storage/store/work/csegerie/parietal/mne-bids-pipeline/config.py", line 1775, in wrapper
+    raise(e)
+  File "/storage/store/work/csegerie/parietal/mne-bids-pipeline/config.py", line 1768, in wrapper
+    return func(*args, **kwargs)
+  File "/storage/store/work/csegerie/parietal/mne-bids-pipeline/scripts/preprocessing/02-frequency_filter.py", line 153, in main
+    parallel(run_func(subject, run, session) for subject, run, session in
+  File "/storage/store/work/csegerie/parietal/mne-python/mne/parallel.py", line 128, in run
+    return fun(*args, **kwargs)
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/site-packages/joblib/parallel.py", line 1054, in __call__
+    self.retrieve()
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/site-packages/joblib/parallel.py", line 933, in retrieve
+    self._output.extend(job.get(timeout=self.timeout))
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/site-packages/joblib/_parallel_backends.py", line 542, in wrap_future_result
+    return future.result(timeout=timeout)
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/concurrent/futures/_base.py", line 440, in result
+    return self.__get_result()
+  File "/storage/store/work/csegerie/miniconda3/envs/mne_dev/lib/python3.9/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+FileNotFoundError: [Errno 2] No such file or directory: '/storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/sub-197/meg/sub-197_task-noise_proc-filt_split-01_raw.fif'
+(mne_dev) csegerie@drago4:/storage/store/work/csegerie/parietal/mne-bids-pipeline$ nice -n 5 python run.py --config=/storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/config.py --steps=preprocessing,sensor,re
+port
+2021-06-10 15:32:44 INFO Now running: init_derivatives_dir
+15:32:46 Using custom configuration: /storage/store2/data/time_in_wm_new/derivatives/mne-bids-pipeline/config.py
+15:32:46 [Step-01] Running: Initializing output directories.
+15:32:46 [Step-01] Initializing output directories.
+15:32:47 [Step-01] Completed: Initializing output directories.
+2021-06-10 15:32:47 INFO Successfully finished running: init_derivatives_dir
+2021-06-10 15:32:47 INFO Now running: import_and_maxfilter
+15:32:47 [Step-01] Running Step 1: Data import
+15:32:47 [Step-01][sub-197] Loading reference run: 01.
+15:32:50 [Step-01][sub-197, run-01] Applying Maxwell filter to experimental data.
+15:33:05 [Step-01][sub-197] Processing empty-room recording …
+15:33:05 [Step-01][sub-197] Applying Maxwell filter to empty-room recording
+15:33:09 [Step-01][sub-197, run-02] Applying Maxwell filter to experimental data.
+15:33:32 [Step-01][sub-197, run-03] Applying Maxwell filter to experimental data.
+

@@ -11,19 +11,19 @@ component	type	description	status	status_description
 9	ica	Independent Component	good	n/a
 10	ica	Independent Component	good	n/a
 11	ica	Independent Component	good	n/a
-12	ica	Independent Component	bad	Auto-detected ECG artifact
+12	ica	Independent Component	good	n/a
 13	ica	Independent Component	good	n/a
-14	ica	Independent Component	good	n/a
+14	ica	Independent Component	bad	Auto-detected ECG artifact
 15	ica	Independent Component	good	n/a
 16	ica	Independent Component	good	n/a
 17	ica	Independent Component	good	n/a
-18	ica	Independent Component	bad	Auto-detected ECG artifact
+18	ica	Independent Component	good	n/a
 19	ica	Independent Component	good	n/a
 20	ica	Independent Component	good	n/a
 21	ica	Independent Component	good	n/a
 22	ica	Independent Component	good	n/a
 23	ica	Independent Component	good	n/a
-24	ica	Independent Component	good	n/a
+24	ica	Independent Component	bad	Auto-detected ECG artifact
 25	ica	Independent Component	good	n/a
 26	ica	Independent Component	good	n/a
 27	ica	Independent Component	good	n/a
@@ -51,24 +51,25 @@ component	type	description	status	status_description
 49	ica	Independent Component	good	n/a
 50	ica	Independent Component	good	n/a
 51	ica	Independent Component	good	n/a
-52	ica	Independent Component	good	n/a
+52	ica	Independent Component	bad	Auto-detected EOG artifact
 53	ica	Independent Component	good	n/a
-54	ica	Independent Component	good	n/a
-55	ica	Independent Component	good	n/a
+54	ica	Independent Component	bad	Auto-detected EOG artifact
+55	ica	Independent Component	bad	Auto-detected EOG artifact
 56	ica	Independent Component	good	n/a
 57	ica	Independent Component	good	n/a
 58	ica	Independent Component	good	n/a
 59	ica	Independent Component	good	n/a
-60	ica	Independent Component	bad	Auto-detected EOG artifact
+60	ica	Independent Component	good	n/a
 61	ica	Independent Component	good	n/a
 62	ica	Independent Component	good	n/a
-63	ica	Independent Component	bad	Auto-detected EOG artifact
+63	ica	Independent Component	good	n/a
 64	ica	Independent Component	good	n/a
 65	ica	Independent Component	good	n/a
-66	ica	Independent Component	bad	Auto-detected EOG artifact
+66	ica	Independent Component	good	n/a
 67	ica	Independent Component	good	n/a
-68	ica	Independent Component	good	n/a
+68	ica	Independent Component	bad	Auto-detected EOG artifact
 69	ica	Independent Component	good	n/a
 70	ica	Independent Component	good	n/a
 71	ica	Independent Component	good	n/a
 72	ica	Independent Component	good	n/a
+73	ica	Independent Component	good	n/a

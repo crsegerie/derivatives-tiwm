@@ -7,7 +7,8 @@ study_name = 'time_in_wm'
 bids_root = '/storage/store2/data/time_in_wm_new'
 task = 'tiwm'
 interactive = False
-subjects = ["197", "215", "231", "486", "788", "840"]
+# subjects = ["197", "215", "231", "486", "788", "840"]
+subjects = "all"
 exclude_subjects = ["512", "586", "812", "972"]
 # 586 only 6 runs. 812: 3 runs.
 # warning : subjects with 9 runs: 215, 231, 653 : one of the run was aborted.
@@ -62,12 +63,11 @@ conditions = ["1_item/short", "1_item/medium", "1_item/long",
 
 # Decoding
 contrasts = [('1_item/short', '1_item/long'),
-             ('3_item/short', '3_item/long'),
-             ('1_item', '3_item')]
+             ('3_item/short', '3_item/long')]
 
 decode = True
 decoding_metric = 'roc_auc'
-decoding_n_splits = 1  # 8
+decoding_n_splits = 2  # 8
 
 # Time frequency
 time_frequency_conditions = conditions
@@ -84,4 +84,4 @@ inverse_method = 'dSPM'
 # Advanced parameters
 l_trans_bandwidth = 'auto'
 h_trans_bandwidth = 'auto'
-N_JOBS = 5
+N_JOBS = 1

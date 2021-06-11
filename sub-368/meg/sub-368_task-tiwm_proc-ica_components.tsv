@@ -16,11 +16,11 @@ component	type	description	status	status_description
 14	ica	Independent Component	good	n/a
 15	ica	Independent Component	good	n/a
 16	ica	Independent Component	good	n/a
-17	ica	Independent Component	good	n/a
+17	ica	Independent Component	bad	Auto-detected ECG artifact
 18	ica	Independent Component	good	n/a
 19	ica	Independent Component	good	n/a
 20	ica	Independent Component	good	n/a
-21	ica	Independent Component	bad	Auto-detected ECG artifact
+21	ica	Independent Component	good	n/a
 22	ica	Independent Component	good	n/a
 23	ica	Independent Component	good	n/a
 24	ica	Independent Component	good	n/a
@@ -45,7 +45,7 @@ component	type	description	status	status_description
 43	ica	Independent Component	good	n/a
 44	ica	Independent Component	good	n/a
 45	ica	Independent Component	good	n/a
-46	ica	Independent Component	good	n/a
+46	ica	Independent Component	bad	Auto-detected EOG artifact
 47	ica	Independent Component	good	n/a
 48	ica	Independent Component	good	n/a
 49	ica	Independent Component	good	n/a
@@ -62,10 +62,12 @@ component	type	description	status	status_description
 60	ica	Independent Component	good	n/a
 61	ica	Independent Component	good	n/a
 62	ica	Independent Component	good	n/a
-63	ica	Independent Component	bad	Auto-detected ECG artifact
+63	ica	Independent Component	good	n/a
 64	ica	Independent Component	good	n/a
 65	ica	Independent Component	good	n/a
 66	ica	Independent Component	good	n/a
 67	ica	Independent Component	good	n/a
 68	ica	Independent Component	good	n/a
 69	ica	Independent Component	good	n/a
+70	ica	Independent Component	good	n/a
+71	ica	Independent Component	bad	Auto-detected ECG artifact
