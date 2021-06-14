@@ -40,7 +40,8 @@ ica_l_freq = 1.
 ica_decim = 4
 ica_n_components = 0.999
 ica_reject_components = 'auto'
-ica_reject = {'mag': 2e-11}  # 5before  # traduction of reject_beforeICA
+# 5before  # traduction of reject_beforeICA
+ica_reject = {'mag': 2e-11}  # autoreject?
 reject = {'grad': 4000e-13, 'mag': 1e-11}  # traduction of reject_afterICA
 ica_ctps_ecg_threshold = 0.1  # Default value of bids-pipeline
 ica_eog_threshold = 3.0
@@ -58,7 +59,7 @@ noise_cov = 'emptyroom'
 
 # event_id : not needed because already in events.tsv
 conditions = ["1_item/short", "1_item/medium", "1_item/long",
-              '3_item/short', '3_item/medium', '3_item/long']
+              "3_item/short", "3_item/medium", "3_item/long"]
 
 
 # Decoding
