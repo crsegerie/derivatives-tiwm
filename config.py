@@ -8,7 +8,7 @@ bids_root = '/storage/store2/data/time_in_wm_new'
 task = 'tiwm'
 interactive = False
 # subjects = ["197", "215", "231", "486", "788", "840"]
-subjects = "all"
+subjects = ["486"]
 exclude_subjects = ["512", "586", "812", "972"]
 # 586 only 6 runs. 812: 3 runs.
 # warning : subjects with 9 runs: 215, 231, 653 : one of the run was aborted.
@@ -41,7 +41,7 @@ ica_decim = 4
 ica_n_components = 0.999
 ica_reject_components = 'auto'
 # 5before  # traduction of reject_beforeICA
-ica_reject = {'mag': 2e-11}  # autoreject?
+ica_reject = {'grad': 8000e-13, 'mag': 2e-11}  # autoreject?
 reject = {'grad': 4000e-13, 'mag': 1e-11}  # traduction of reject_afterICA
 ica_ctps_ecg_threshold = 0.1  # Default value of bids-pipeline
 ica_eog_threshold = 3.0
