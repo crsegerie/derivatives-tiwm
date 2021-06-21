@@ -38,11 +38,11 @@ spatial_filter = 'ica'
 ica_max_iterations = 1500
 ica_l_freq = 1.
 ica_decim = 4
-ica_n_components = 0.999
+ica_n_components = 0.99  # different number for each participants
 ica_reject_components = 'auto'
 # 5before  # traduction of reject_beforeICA
-ica_reject = {'grad': 8000e-13, 'mag': 2e-11}  # autoreject?
-reject = {'grad': 4000e-13, 'mag': 1e-11}  # traduction of reject_afterICA
+ica_reject = {'grad': 4e-10, 'mag': 1e-11}  # autoreject?
+reject = {'grad': 2e-10, 'mag': 0.5e-11}  # traduction of reject_afterICA
 ica_ctps_ecg_threshold = 0.1  # Default value of bids-pipeline
 ica_eog_threshold = 3.0
 
