@@ -8,7 +8,7 @@ bids_root = '/storage/store2/data/time_in_wm_new'
 task = 'tiwm'
 interactive = False
 # subjects = ["197", "215", "231", "486", "788", "840"]
-subjects = ["486"]
+subjects = "all"
 exclude_subjects = ["512", "586", "812", "972"]
 # 586 only 6 runs. 812: 3 runs.
 # warning : subjects with 9 runs: 215, 231, 653 : one of the run was aborted.
