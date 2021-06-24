@@ -29,46 +29,33 @@ component	type	description	status	status_description
 27	ica	Independent Component	good	n/a
 28	ica	Independent Component	good	n/a
 29	ica	Independent Component	good	n/a
-30	ica	Independent Component	bad	Auto-detected ECG artifact
+30	ica	Independent Component	good	n/a
 31	ica	Independent Component	good	n/a
 32	ica	Independent Component	good	n/a
-33	ica	Independent Component	good	n/a
+33	ica	Independent Component	bad	Auto-detected EOG artifact
 34	ica	Independent Component	good	n/a
 35	ica	Independent Component	good	n/a
 36	ica	Independent Component	good	n/a
-37	ica	Independent Component	bad	Auto-detected EOG artifact
+37	ica	Independent Component	good	n/a
 38	ica	Independent Component	good	n/a
 39	ica	Independent Component	good	n/a
 40	ica	Independent Component	good	n/a
 41	ica	Independent Component	good	n/a
 42	ica	Independent Component	good	n/a
-43	ica	Independent Component	good	n/a
+43	ica	Independent Component	bad	Auto-detected EOG artifact
 44	ica	Independent Component	good	n/a
 45	ica	Independent Component	good	n/a
 46	ica	Independent Component	good	n/a
 47	ica	Independent Component	good	n/a
 48	ica	Independent Component	good	n/a
 49	ica	Independent Component	good	n/a
-50	ica	Independent Component	bad	Auto-detected EOG artifact
+50	ica	Independent Component	good	n/a
 51	ica	Independent Component	good	n/a
 52	ica	Independent Component	good	n/a
-53	ica	Independent Component	bad	Auto-detected EOG artifact
+53	ica	Independent Component	good	n/a
 54	ica	Independent Component	good	n/a
 55	ica	Independent Component	good	n/a
 56	ica	Independent Component	good	n/a
-57	ica	Independent Component	bad	Auto-detected EOG artifact
+57	ica	Independent Component	good	n/a
 58	ica	Independent Component	good	n/a
 59	ica	Independent Component	good	n/a
-60	ica	Independent Component	good	n/a
-61	ica	Independent Component	good	n/a
-62	ica	Independent Component	good	n/a
-63	ica	Independent Component	good	n/a
-64	ica	Independent Component	good	n/a
-65	ica	Independent Component	good	n/a
-66	ica	Independent Component	good	n/a
-67	ica	Independent Component	good	n/a
-68	ica	Independent Component	good	n/a
-69	ica	Independent Component	good	n/a
-70	ica	Independent Component	good	n/a
-71	ica	Independent Component	good	n/a
-72	ica	Independent Component	good	n/a
