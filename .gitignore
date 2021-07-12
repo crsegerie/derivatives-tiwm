@@ -2,3 +2,4 @@
 *.fif
 *.h5
 config_2.py
+*.npy
