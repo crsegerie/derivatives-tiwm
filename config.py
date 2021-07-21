@@ -85,4 +85,4 @@ inverse_method = 'dSPM'
 # Advanced parameters
 l_trans_bandwidth = 'auto'
 h_trans_bandwidth = 'auto'
-N_JOBS = 1
+N_JOBS = 25
